@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: org.eclipse.tracecompass.totalads.ui.swtbot.tests;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %Bundle-Vendor
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.swtbot.go,
+ org.eclipse.swtbot.junit4_x,
+ org.eclipse.ui.views,
+ org.eclipse.core.resources,
+ org.eclipse.ui.ide,
+ org.eclipse.tracecompass.totalads.core,
+ org.eclipse.tracecompass.totalads.ui,
+ org.eclipse.swtbot.forms.finder;bundle-version="2.2.1",
+ org.eclipse.tracecompass.tmf.ui.swtbot.tests

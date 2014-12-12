@@ -1,0 +1,54 @@
+Sun Nov 16 14:18:17 EST 2014
+ERROR org.eclipse.rse.ui  Error saving new subsystem Local Files
+java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.rse.core.subsystems.SubSystem.commit(SubSystem.java:3301)
+	at org.eclipse.rse.core.subsystems.SubSystemConfiguration.saveSubSystem(SubSystemConfiguration.java:2525)
+	at org.eclipse.rse.core.subsystems.SubSystemConfiguration.createSubSystem(SubSystemConfiguration.java:1051)
+	at org.eclipse.rse.internal.core.model.SystemRegistry$1CreateHostOperation.run(SystemRegistry.java:1627)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.runOperation(SystemProfileManager.java:98)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.run(SystemProfileManager.java:89)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1637)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1537)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createLocalHost(SystemRegistry.java:1505)
+	at org.eclipse.rse.internal.core.RSELocalConnectionInitializer.run(RSELocalConnectionInitializer.java:52)
+	at org.eclipse.rse.internal.core.RSEInitJob.runInitializer(RSEInitJob.java:310)
+	at org.eclipse.rse.internal.core.RSEInitJob.run(RSEInitJob.java:222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+--------------------------------------------
+Sun Nov 16 14:18:17 EST 2014
+ERROR org.eclipse.rse.ui  Error saving new subsystem Local Shells
+java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.rse.core.subsystems.SubSystem.commit(SubSystem.java:3301)
+	at org.eclipse.rse.core.subsystems.SubSystemConfiguration.saveSubSystem(SubSystemConfiguration.java:2525)
+	at org.eclipse.rse.core.subsystems.SubSystemConfiguration.createSubSystem(SubSystemConfiguration.java:1051)
+	at org.eclipse.rse.internal.core.model.SystemRegistry$1CreateHostOperation.run(SystemRegistry.java:1627)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.runOperation(SystemProfileManager.java:98)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.run(SystemProfileManager.java:89)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1637)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1537)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createLocalHost(SystemRegistry.java:1505)
+	at org.eclipse.rse.internal.core.RSELocalConnectionInitializer.run(RSELocalConnectionInitializer.java:52)
+	at org.eclipse.rse.internal.core.RSEInitJob.runInitializer(RSEInitJob.java:310)
+	at org.eclipse.rse.internal.core.RSEInitJob.run(RSEInitJob.java:222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+--------------------------------------------
+Sun Nov 16 14:18:17 EST 2014
+ERROR org.eclipse.rse.ui  Error saving new subsystem Local Process Spawner
+java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.rse.core.subsystems.SubSystem.commit(SubSystem.java:3301)
+	at org.eclipse.rse.core.subsystems.SubSystemConfiguration.saveSubSystem(SubSystemConfiguration.java:2525)
+	at org.eclipse.rse.core.subsystems.SubSystemConfiguration.createSubSystem(SubSystemConfiguration.java:1051)
+	at org.eclipse.rse.internal.core.model.SystemRegistry$1CreateHostOperation.run(SystemRegistry.java:1627)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.runOperation(SystemProfileManager.java:98)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.run(SystemProfileManager.java:89)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1637)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1537)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createLocalHost(SystemRegistry.java:1505)
+	at org.eclipse.rse.internal.core.RSELocalConnectionInitializer.run(RSELocalConnectionInitializer.java:52)
+	at org.eclipse.rse.internal.core.RSEInitJob.runInitializer(RSEInitJob.java:310)
+	at org.eclipse.rse.internal.core.RSEInitJob.run(RSEInitJob.java:222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+--------------------------------------------
