@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.test"
+      label="%featureName"
+      version="3.6.100.v20140528-1640"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+   
+   <requires>
+      <import plugin="org.apache.ant"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.runtime.compatibility"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.ant.optional.junit"
+         download-size="6"
+         install-size="9"
+         version="3.3.100.v20140518-1929"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.test"
+         download-size="533"
+         install-size="607"
+         version="3.3.200.v20140518-0024"/>
+
+   <plugin
+         id="org.eclipse.test.source"
+         download-size="20"
+         install-size="50"
+         version="3.3.200.v20140518-0024"/>
+
+   <plugin
+         id="org.eclipse.test.performance"
+         download-size="115"
+         install-size="226"
+         version="3.9.100.v20140518-1929"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.test.performance.win32"
+         download-size="60"
+         install-size="128"
+         version="3.1.200.v20140518-1929"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.junit"
+         download-size="223"
+         install-size="268"
+         version="4.11.0.v201303080030"/>
+
+   <plugin
+         id="org.easymock"
+         download-size="89"
+         install-size="173"
+         unpack="false"
+         version="2.4.0.v20090202-0900"/>
+         
+         
+   <plugin
+         id="org.hamcrest.core"
+         download-size="54"
+         install-size="113"
+         version="1.3.0.v201303031735"
+         unpack="false"/>
+
+</feature>

@@ -37,8 +37,9 @@ public class AlgorithmFactory {
 
     // Variables that keep track of algorithms in the class
     private static AlgorithmFactory fAlgorithmTypes = null;
-    private HashMap<AlgorithmTypes, HashSet<String>> fAlgList = null;
+     private HashMap<AlgorithmTypes, HashSet<String>> fAlgList = null;
     private HashMap<String, IDetectionAlgorithm> fAcronymModels = null;
+    private static Boolean init=false;
 
     /**
      * Constructor to create an algorithms' factory
@@ -68,7 +69,9 @@ public class AlgorithmFactory {
      */
     public static void destroyInstance() {
         if (fAlgorithmTypes != null) {
+            init= false;
             fAlgorithmTypes = null;
+
         }
     }
 
@@ -188,10 +191,12 @@ public class AlgorithmFactory {
         // //java.util.Set<Class<? extends IDetectionAlgorithm>> modules =
         // reflections.getSubTypesOf
         // (org.eclipse.tracecompass.totalads.ui.IDetectionAlgorithms.class);
-
-        KernelStateModeling.registerAlgorithm();
-        SequenceMatching.registerAlgorithm();
-        HiddenMarkovModel.registerAlgorithm();
+        if (init==false){
+            KernelStateModeling.registerAlgorithm();
+            SequenceMatching.registerAlgorithm();
+            HiddenMarkovModel.registerAlgorithm();
+            init=true;
+        }
 
     }
 

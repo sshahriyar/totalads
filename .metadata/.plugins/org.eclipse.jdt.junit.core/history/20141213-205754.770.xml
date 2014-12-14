@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SlidingWindowTest" project="org.eclipse.tracecompass.totalads.core.tests" tests="16" started="16" failures="0" errors="0" ignored="0">
+  <testsuite name="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.522">
+    <testcase name="testGetSettingsToDisplay" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.187"/>
+    <testcase name="testSlidingWindow" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.001"/>
+    <testcase name="testTrain" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.085"/>
+    <testcase name="testTest" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+    <testcase name="testGetAcronym" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+    <testcase name="testValidate" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+    <testcase name="testGetTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.001"/>
+    <testcase name="testSaveTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.002"/>
+    <testcase name="testGetName" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+    <testcase name="testInitializeModelAndSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.089"/>
+    <testcase name="testCreateInstance" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.001"/>
+    <testcase name="testIsOnlineLearningSupported" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+    <testcase name="testRegisterModel" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+    <testcase name="testGetDescription" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.001"/>
+    <testcase name="testGetTotalAnomalyPercentage" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.001"/>
+    <testcase name="testGetTrainingSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.153"/>
+  </testsuite>
+</testrun>

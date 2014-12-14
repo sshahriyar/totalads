@@ -125,11 +125,12 @@
 </profiles>
 
   <modules>
-    <module>org.eclipse.tracecompass.totalads.target</module>
-
+    
+<module>org.eclipse.tracecompass.totalads.target</module>
+<module>org.eclipse.tracecompass.totalads.libraries</module>    
     <module>org.eclipse.tracecompass.totalads.core</module>
-    <module>org.eclipse.tracecompass.totalads.core.tests</module>
-    <module>org.eclipse.tracecompass.totalads.ui</module>
+<module>org.eclipse.tracecompass.totalads.core.tests</module>
+        <module>org.eclipse.tracecompass.totalads.ui</module>
     <module>org.eclipse.tracecompass.totalads.ui.swtbot.tests</module>
   </modules>
 
@@ -172,7 +173,7 @@
                         <groupId>org.eclipse.tracecompass</groupId>
                         <artifactId>org.eclipse.tracecompass.totalads.target</artifactId>
                         <classifier>${target-platform}</classifier>
-                        <version>1.0.0</version>
+                        <version>0.1.0</version>
                       </artifact>
                     </target>
                     <filters>

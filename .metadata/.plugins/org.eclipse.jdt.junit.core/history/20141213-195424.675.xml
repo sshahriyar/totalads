@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AllTotalADSTests" project="org.eclipse.tracecompass.totalads.core.tests" tests="79" started="79" failures="0" errors="0" ignored="0">
+  <testsuite name="org.eclipse.tracecompass.totalads.core.tests.AllTotalADSTests" time="10.753">
+    <testsuite name="org.eclipse.tracecompass.totalads.core.tests.algorithms.AlgorithmFactoryTest" time="3.213">
+      <testcase name="testRegisterModelWithFactoryForNullValues" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.AlgorithmFactoryTest" time="0.094"/>
+      <testcase name="testGetAlgorithms" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.AlgorithmFactoryTest" time="0.199"/>
+      <testcase name="testInitialize" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.AlgorithmFactoryTest" time="0.0"/>
+      <testcase name="testGetAlgorithmByAcronym" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.AlgorithmFactoryTest" time="0.0"/>
+      <testcase name="testGetAlgorithmByAcronymNullValue" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.AlgorithmFactoryTest" time="0.001"/>
+      <testcase name="testDestroyInstance" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.AlgorithmFactoryTest" time="0.003"/>
+      <testcase name="testGetInstance" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.AlgorithmFactoryTest" time="2.916"/>
+    </testsuite>
+    <testsuite name="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="2.493">
+      <testcase name="testGetSettingsToDisplay" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.217"/>
+      <testcase name="testTrain" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.002"/>
+      <testcase name="testTest" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+      <testcase name="testGetAcronym" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.001"/>
+      <testcase name="testValidate" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+      <testcase name="testGetTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.001"/>
+      <testcase name="testSaveTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.002"/>
+      <testcase name="testGetName" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+      <testcase name="testInitializeModelAndSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.076"/>
+      <testcase name="testHiddenMarkovModel" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+      <testcase name="testCreateInstance" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+      <testcase name="testIsOnlineLearningSupported" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+      <testcase name="testRegisterModel" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+      <testcase name="testGetDescription" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.001"/>
+      <testcase name="testGetTotalAnomalyPercentage" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.001"/>
+      <testcase name="testGetTrainingSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="2.19"/>
+    </testsuite>
+    <testsuite name="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="2.299">
+      <testcase name="testGetSettingsToDisplay" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.079"/>
+      <testcase name="testTrain" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.019"/>
+      <testcase name="testTest" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+      <testcase name="testGetAcronym" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+      <testcase name="testValidate" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.001"/>
+      <testcase name="testGetTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.002"/>
+      <testcase name="testSaveTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.005"/>
+      <testcase name="testGetName" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+      <testcase name="testKernelStateModeling" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.001"/>
+      <testcase name="testInitializeModelAndSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.066"/>
+      <testcase name="testCreateInstance" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+      <testcase name="testIsOnlineLearningSupported" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+      <testcase name="testRegisterModel" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.001"/>
+      <testcase name="testGetDescription" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+      <testcase name="testGetTotalAnomalyPercentage" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.001"/>
+      <testcase name="testGetTrainingSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="2.123"/>
+    </testsuite>
+    <testsuite name="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="2.394">
+      <testcase name="testGetSettingsToDisplay" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.102"/>
+      <testcase name="testSlidingWindow" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+      <testcase name="testTrain" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.02"/>
+      <testcase name="testTest" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+      <testcase name="testGetAcronym" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+      <testcase name="testValidate" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.001"/>
+      <testcase name="testGetTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.001"/>
+      <testcase name="testSaveTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.007"/>
+      <testcase name="testGetName" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+      <testcase name="testInitializeModelAndSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.073"/>
+      <testcase name="testCreateInstance" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.001"/>
+      <testcase name="testIsOnlineLearningSupported" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.001"/>
+      <testcase name="testRegisterModel" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+      <testcase name="testGetDescription" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.0"/>
+      <testcase name="testGetTotalAnomalyPercentage" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="0.001"/>
+      <testcase name="testGetTrainingSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest" time="2.186"/>
+    </testsuite>
+    <testsuite name="org.eclipse.tracecompass.totalads.core.tests.dbms.DBMSFactoryTest" time="0.23">
+      <testcase name="testGetDataAccessObject" classname="org.eclipse.tracecompass.totalads.core.tests.dbms.DBMSFactoryTest" time="0.004"/>
+      <testcase name="testDeleteDatabase" classname="org.eclipse.tracecompass.totalads.core.tests.dbms.DBMSFactoryTest" time="0.058"/>
+      <testcase name="testOpenConnectionWithUserNameAndPassword" classname="org.eclipse.tracecompass.totalads.core.tests.dbms.DBMSFactoryTest" time="0.045"/>
+      <testcase name="testCloseConnection" classname="org.eclipse.tracecompass.totalads.core.tests.dbms.DBMSFactoryTest" time="0.004"/>
+      <testcase name="testOpenConnection" classname="org.eclipse.tracecompass.totalads.core.tests.dbms.DBMSFactoryTest" time="0.005"/>
+      <testcase name="testVerifyConnection" classname="org.eclipse.tracecompass.totalads.core.tests.dbms.DBMSFactoryTest" time="0.114"/>
+    </testsuite>
+    <testsuite name="org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest" time="0.087">
+      <testcase name="testGetTraceReader" classname="org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest" time="0.017"/>
+      <testcase name="testCTFKernelReaderOrSimpleTextReader" classname="org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest" time="0.041"/>
+      <testcase name="testGetAllTraceReaders" classname="org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest" time="0.0"/>
+      <testcase name="testGetAllTraceTypeReaderKeys" classname="org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest" time="0.0"/>
+      <testcase name="testInitialize" classname="org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest" time="0.001"/>
+      <testcase name="testDestroyInstance" classname="org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest" time="0.0"/>
+      <testcase name="testRegisterTraceReaderWithFactoryForNullValues" classname="org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest" time="0.028"/>
+      <testcase name="testGetInstance" classname="org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="org.eclipse.tracecompass.totalads.core.tests.readers.ctfreaders.CTFLTTngSysCallTraceReaderTest" time="0.019">
+      <testcase name="testGetTraceIterator" classname="org.eclipse.tracecompass.totalads.core.tests.readers.ctfreaders.CTFLTTngSysCallTraceReaderTest" time="0.018"/>
+      <testcase name="testCTFLTTngSysCallTraceReader" classname="org.eclipse.tracecompass.totalads.core.tests.readers.ctfreaders.CTFLTTngSysCallTraceReaderTest" time="0.0"/>
+      <testcase name="testGetAcronym" classname="org.eclipse.tracecompass.totalads.core.tests.readers.ctfreaders.CTFLTTngSysCallTraceReaderTest" time="0.0"/>
+      <testcase name="testGetName" classname="org.eclipse.tracecompass.totalads.core.tests.readers.ctfreaders.CTFLTTngSysCallTraceReaderTest" time="0.0"/>
+      <testcase name="testCreateInstance" classname="org.eclipse.tracecompass.totalads.core.tests.readers.ctfreaders.CTFLTTngSysCallTraceReaderTest" time="0.001"/>
+    </testsuite>
+    <testsuite name="org.eclipse.tracecompass.totalads.core.tests.readers.textreaders.TextLineTraceReaderTest" time="0.018">
+      <testcase name="testTextLineTraceReader" classname="org.eclipse.tracecompass.totalads.core.tests.readers.textreaders.TextLineTraceReaderTest" time="0.0"/>
+      <testcase name="testGetTraceIterator" classname="org.eclipse.tracecompass.totalads.core.tests.readers.textreaders.TextLineTraceReaderTest" time="0.016"/>
+      <testcase name="testGetAcronym" classname="org.eclipse.tracecompass.totalads.core.tests.readers.textreaders.TextLineTraceReaderTest" time="0.001"/>
+      <testcase name="testGetName" classname="org.eclipse.tracecompass.totalads.core.tests.readers.textreaders.TextLineTraceReaderTest" time="0.0"/>
+      <testcase name="testCreateInstance" classname="org.eclipse.tracecompass.totalads.core.tests.readers.textreaders.TextLineTraceReaderTest" time="0.001"/>
+    </testsuite>
+  </testsuite>
+</testrun>

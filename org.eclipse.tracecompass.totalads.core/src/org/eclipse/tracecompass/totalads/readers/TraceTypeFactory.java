@@ -36,7 +36,7 @@ public class TraceTypeFactory {
     // Data variables
     private static TraceTypeFactory traceTypes = null;
     private static LinkedHashMap<String, ITraceTypeReader> traceTypeReadersList = null;
-
+    private static Boolean init =false;
     /**
      * Constructor
      */
@@ -64,6 +64,7 @@ public class TraceTypeFactory {
      */
     public static void destroyInstance() {
         if (traceTypes != null) {
+            init =false;
             traceTypes = null;
             traceTypeReadersList=null;
         }
@@ -176,11 +177,14 @@ public class TraceTypeFactory {
         // (org.eclipse.tracecompass.totalads.ui.IDetectionModels.class);
         // The following code needs to be replaced with reflection in future
         // versions
-        CTFLTTngSysCallTraceReader.registerTraceTypeReader();
-        TextLineTraceReader.registerTraceTypeReader();
-        //TextSysIDtoNameTraceReader.registerTraceTypeReader();
-        CustomTmfReaderInitializer.registerAllCustomTmfTextTReaders();
-        CustomTmfReaderInitializer.registerAllCustomTmfXmlReaders();
+       if (init ==false){
+            CTFLTTngSysCallTraceReader.registerTraceTypeReader();
+            TextLineTraceReader.registerTraceTypeReader();
+            //TextSysIDtoNameTraceReader.registerTraceTypeReader();
+            CustomTmfReaderInitializer.registerAllCustomTmfTextTReaders();
+            CustomTmfReaderInitializer.registerAllCustomTmfXmlReaders();
+            init =true;
+       }
     }
 
 }

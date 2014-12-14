@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2014-12-13T21:44:54</date>
+  <millis>1418525094516</millis>
+  <sequence>0</sequence>
+  <logger>de.flapdoodle.embed.process.runtime.ProcessControl</logger>
+  <level>INFO</level>
+  <class>de.flapdoodle.embed.process.runtime.ProcessControl</class>
+  <method>stopOrDestroyProcess</method>
+  <thread>1</thread>
+  <message>stopOrDestroyProcess: process hasn't exited </message>
+</record>
+<record>
+  <date>2014-12-13T21:44:58</date>
+  <millis>1418525098764</millis>
+  <sequence>1</sequence>
+  <logger>de.flapdoodle.embed.process.runtime.Executable</logger>
+  <level>INFO</level>
+  <class>MongodExecutable</class>
+  <method>start</method>
+  <thread>1</thread>
+  <message>de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@712f46da</message>
+</record>
+<record>
+  <date>2014-12-13T21:45:05</date>
+  <millis>1418525105230</millis>
+  <sequence>2</sequence>
+  <logger>de.flapdoodle.embed.process.runtime.Executable</logger>
+  <level>INFO</level>
+  <class>MongodExecutable</class>
+  <method>start</method>
+  <thread>1</thread>
+  <message>de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@587cc9a3</message>
+</record>
+<record>
+  <date>2014-12-13T21:45:08</date>
+  <millis>1418525108160</millis>
+  <sequence>3</sequence>
+  <logger>de.flapdoodle.embed.process.runtime.Executable</logger>
+  <level>INFO</level>
+  <class>MongodExecutable</class>
+  <method>start</method>
+  <thread>1</thread>
+  <message>de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7fc8fdd8</message>
+</record>
+<record>
+  <date>2014-12-13T21:45:11</date>
+  <millis>1418525111276</millis>
+  <sequence>4</sequence>
+  <logger>de.flapdoodle.embed.process.runtime.Executable</logger>
+  <level>INFO</level>
+  <class>MongodExecutable</class>
+  <method>start</method>
+  <thread>1</thread>
+  <message>de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@213b91a5</message>
+</record>
+</log>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="totalads-4.4" sequenceNumber="52">
+<?pde version="3.8"?><target name="totalads-4.4" sequenceNumber="54">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.license.feature.group" version="0.0.0"/>
@@ -54,6 +54,7 @@
 <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
 <unit id="com.jcraft.jsch" version="0.1.50.v201403120620"/>
 <unit id="org.apache.commons.math.source" version="2.1.0.v201105210652"/>
+<unit id="org.apache.commons.compress" version="1.6.0.v201310281400"/>
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
 </location>
 </locations>

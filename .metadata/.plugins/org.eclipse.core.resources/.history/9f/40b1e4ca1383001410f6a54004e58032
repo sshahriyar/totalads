@@ -1,0 +1,5 @@
+package org.eclipse.tracecompass.totalads.core.tests;
+
+public class TotalADSTestPlugin {
+
+}

@@ -1,0 +1,48 @@
+/*******************************************************************************
+ * Copyright (c) 2013, 2014 SBA Lab, Concordia University
+ *
+ * All rights reserved. This program and the accompanying materials are
+ * made available under the terms of the Eclipse Public License v1.0 which
+ * accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *  Syed Shariyar Murtaza
+ *******************************************************************************/
+
+package org.eclipse.tracecompass.totalads.core.tests;
+
+import org.eclipse.tracecompass.totalads.core.tests.algorithms.AlgorithmFactoryTest;
+import org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest;
+import org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest;
+import org.eclipse.tracecompass.totalads.core.tests.algorithms.slidingwindow.SlidingWindowTest;
+import org.eclipse.tracecompass.totalads.core.tests.dbms.DBMSFactoryTest;
+import org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest;
+import org.eclipse.tracecompass.totalads.core.tests.readers.ctfreaders.CTFLTTngSysCallTraceReaderTest;
+import org.eclipse.tracecompass.totalads.core.tests.readers.textreaders.TextLineTraceReaderTest;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+/**
+ * Master test suite for TotalADS core plugin
+ *
+ * @author <p>
+ *         Syed Shariyar Murtaza justsshary@hotmail.com
+ *         </p>
+ */
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+        AlgorithmFactoryTest.class,
+        // AlgorithmUtilityTest.class,
+        HiddenMarkovModelTest.class,
+        KernelStateModelingTest.class,
+        SlidingWindowTest.class,
+        DBMSFactoryTest.class,
+        TraceTypeFactoryTest.class,
+        CTFLTTngSysCallTraceReaderTest.class,
+        TextLineTraceReaderTest.class
+
+})
+public class AllTests {
+
+}

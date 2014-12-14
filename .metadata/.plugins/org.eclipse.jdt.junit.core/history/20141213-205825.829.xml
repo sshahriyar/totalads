@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="HiddenMarkovModelTest" project="org.eclipse.tracecompass.totalads.core.tests" tests="16" started="16" failures="0" errors="0" ignored="0">
+  <testsuite name="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.449">
+    <testcase name="testGetSettingsToDisplay" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.171"/>
+    <testcase name="testTrain" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.053"/>
+    <testcase name="testTest" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+    <testcase name="testGetAcronym" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+    <testcase name="testValidate" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+    <testcase name="testGetTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.002"/>
+    <testcase name="testSaveTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.003"/>
+    <testcase name="testGetName" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+    <testcase name="testInitializeModelAndSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.091"/>
+    <testcase name="testHiddenMarkovModel" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+    <testcase name="testCreateInstance" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.001"/>
+    <testcase name="testIsOnlineLearningSupported" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.001"/>
+    <testcase name="testRegisterModel" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.0"/>
+    <testcase name="testGetDescription" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.001"/>
+    <testcase name="testGetTotalAnomalyPercentage" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.002"/>
+    <testcase name="testGetTrainingSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest" time="0.123"/>
+  </testsuite>
+</testrun>

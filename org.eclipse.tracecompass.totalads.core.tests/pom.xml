@@ -1,22 +1,32 @@
-<!-- NOTES: POM showing errors. Needs to be fixed -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Ericsson
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<artifactId>org.eclipse.tracecompass</artifactId>
-		<groupId>org.eclipse.tracecompass</groupId>
-		<version>0.1.0-SNAPSHOT</version>
-	</parent>
+   All rights reserved. This program and the accompanying materials
+   are made available under the terms of the Eclipse Public License v1.0
+   which accompanies this distribution, and is available at
+   http://www.eclipse.org/legal/epl-v10.html
+-->
 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.eclipse.tracecompass.totalads.core.tests</groupId>
+  <parent>
+    <artifactId>org.eclipse.tracecompass</artifactId>
+    <groupId>org.eclipse.tracecompass</groupId>
+    <version>0.1.0-SNAPSHOT</version>
+  </parent>
+
+	<groupId>org.eclipse.tracecompass</groupId>
 	<artifactId>org.eclipse.tracecompass.totalads.core.tests</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>TotalADs Core Test Plugin</name>
-	<description>TotalADs Core Test Plugin</description>
+	<version>0.1.0-SNAPSHOT</version>
+	<name>TotalADS Core Test Plugin</name>
+	<description>TotalADS Core Test Plugin</description>
+    <packaging>eclipse-test-plugin</packaging>
 
-	<!-- Do not download the test traces if "maven.test.skip" is set -->
+  <!-- Do not download the test traces if "maven.test.skip" is set -->
 	<profiles>
 		<profile>
 			<id>download-traces</id>
@@ -51,81 +61,45 @@
 		</profile>
 	</profiles>
 
+  <build>
+    <plugins>
 
-	<build>
-		<sourceDirectory>src</sourceDirectory>
+      <!-- We don't use the ant file to clean because of http://jira.codehaus.org/browse/MANTRUN-78 -->
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.5</version>
+        <executions>
+          <execution>
+            <id>clean-traces</id>
+            <phase>clean</phase>
+            <configuration>
+              <filesets>
+                <fileset><directory>sampletraces/trace2</directory></fileset>
+               </filesets>
+            </configuration>
+            <goals>
+              <goal>clean</goal>
+            </goals>
+          </execution>
+        </executions>
+       </plugin>
 
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-surefire-plugin</artifactId>
+        <version>${tycho-version}</version>
 
+        <configuration>
+                <testSuite>org.eclipse.tracecompass.totalads.core.tests</testSuite>
+                <testClass>org.eclipse.tracecompass.totalads.core.tests.AllTotalADSTests</testClass>
+                <useUIHarness>false</useUIHarness>
+                <useUIThread>false</useUIThread>
+                <product>org.eclipse.platform.ide</product>
+            </configuration>
 
+      </plugin>
 
-			<!-- We don't use the ant file to clean because of http://jira.codehaus.org/browse/MANTRUN-78 -->
-			<plugin>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>2.5</version>
-				<executions>
-					<execution>
-						<id>clean-traces</id>
-						<phase>clean</phase>
-						<configuration>
-							<filesets>
-								<fileset>
-									<directory>sampletraces/trace2</directory>
-								</fileset>
-							</filesets>
-						</configuration>
-						<goals>
-							<goal>clean</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
-				<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.18</version>
-				<configuration>
-					<includes>
-						<include>AllTotalADSTests.java</include>
-					</includes>
-				</configuration>
-			</plugin>
-
-		</plugins>
-	</build>
-
-
-	<dependencies>
-		<dependency>
-			<groupId>de.flapdoodle.embed</groupId>
-			<artifactId>de.flapdoodle.embed.mongo</artifactId>
-			<version>1.46.0</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.tracecompass</groupId>
-			<artifactId>org.eclipse.tracecompass.totalads.core</artifactId>
-			<version>0.1.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.tracecompass</groupId>
-			<artifactId>org.eclipse.tracecompass.ctf.core</artifactId>
-			<version>0.1.0-SNAPSHOT</version>
-		</dependency>
-
-	</dependencies>
+    </plugins>
+  </build>
 
 </project>

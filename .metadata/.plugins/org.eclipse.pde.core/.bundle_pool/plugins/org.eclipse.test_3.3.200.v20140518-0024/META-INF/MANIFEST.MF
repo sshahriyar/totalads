@@ -1,0 +1,63 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Built-By: e4Build
+Bundle-SymbolicName: org.eclipse.test; singleton:=true
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/platfo
+ rm/eclipse.platform.releng.git;path="bundles/org.eclipse.test";tag="I
+ 20140518-2000";commitId=b075f81b55ac960a47fb248f12ce47d39eff521e
+Require-Bundle: org.apache.ant,org.junit,org.eclipse.ui,org.eclipse.co
+ re.runtime,org.eclipse.ui.ide.application,org.eclipse.equinox.app
+Bundle-Version: 3.3.200.v20140518-0024
+Export-Package: org.eclipse.test
+Build-Jdk: 1.7.0_51
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Eclipse-BundleShape: dir
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/test/EclipseTestRunner$1$1.class
+SHA1-Digest: 5yY8eOp4Ygqbl9Qc9gTb67/CHYk=
+
+Name: org/eclipse/test/UITestApplication$1$1.class
+SHA1-Digest: bqYPasPPGt//NaBr2d28rt5fs1A=
+
+Name: org/eclipse/test/EclipseTestRunner$TestFailedException.class
+SHA1-Digest: WS+ZhB+/OsH+wjizb/LzZRcuFp8=
+
+Name: org/eclipse/test/RegressionTest.class
+SHA1-Digest: cspMFQ+R0NXQy487w0Zi6QWfMIs=
+
+Name: org/eclipse/test/EclipseTestRunner.class
+SHA1-Digest: PFb3CsxuK+c1kytuDDIVwv93AYc=
+
+Name: org/eclipse/test/UITestApplication.class
+SHA1-Digest: Dc2BnGwcRz9EXzX+WNrBcatWMnk=
+
+Name: plugin.properties
+SHA1-Digest: ujq63h7ZVU2ogbR2PvZcvPHLGos=
+
+Name: org/eclipse/test/EclipseTestRunner$1.class
+SHA1-Digest: xmz2wWJw5IhLWeFFLlp8pQaja/0=
+
+Name: org/eclipse/test/UITestApplication$1.class
+SHA1-Digest: /5YZ8QdBommWwCw2c71EJqNssLY=
+
+Name: org/eclipse/test/UITestApplication$2.class
+SHA1-Digest: p7aksvQ6bJCTHH0Vyi7K5cbSc4U=
+
+Name: lib/jacocoagent.jar
+SHA1-Digest: pRyJF+b5+dbggF9mGo8FfNJNMWQ=
+
+Name: lib/jacocoant.jar
+SHA1-Digest: fd+I9/WhujAdoUzL3lFgm2uKZRs=
+
+Name: plugin.xml
+SHA1-Digest: V5Z5sO1rjreYsHO8VQ5hCum/HmU=
+
+Name: org/eclipse/test/CoreTestApplication.class
+SHA1-Digest: YtRnq+bDVH1riKqeJk6rG94Y8yc=
+

@@ -1,0 +1,86 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: SgjOmAf83iQ5AyslUMhfglIwbBE=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: tf4+DYVZSw//PRGgEPxaHlqMEgg=
+
+Name: bin/gtk/aix/ppc/launcher
+SHA1-Digest: GLN2NadZnyNjpdqDDy5fhT4A0Nw=
+
+Name: bin/gtk/aix/ppc64/launcher
+SHA1-Digest: iJlQJ9MYTyQzq0KrcttDLg/H5e0=
+
+Name: bin/win32/win32/x86/eclipsec.exe
+SHA1-Digest: teZEMINSLUvKKEDiNG5XDjOFKfg=
+
+Name: bin/gtk/linux/ppc64le/launcher
+SHA1-Digest: UkU+LdZdqWYvfJFf5TRYUke83oI=
+
+Name: epl-v10.html
+SHA1-Digest: /iY8aEvT0IMpNnSjB0FpTUhvUGc=
+
+Name: bin/cocoa/macosx/x86_64/Eclipse.app/Contents/MacOS/launcher
+SHA1-Digest: 9Qx1dB3NCti4De0OVSAczEWhGSU=
+
+Name: bin/gtk/solaris/x86/launcher
+SHA1-Digest: 3MC6xLQMOJFZ8UbWM67fgPmpbJE=
+
+Name: build.xml
+SHA1-Digest: cms6GjJhbGSJHYxd0SaqJ/6l+4s=
+
+Name: bin/gtk/solaris/sparc/launcher
+SHA1-Digest: /H93ghb9J4Wyb2gDAVm6Xaqygts=
+
+Name: bin/win32/win32/x86_64/eclipsec.exe
+SHA1-Digest: vumcitRuHnG5jI8IwTfvHZqy2lI=
+
+Name: gtk_root/about.html
+SHA1-Digest: 9mPEKWBRzWebQ/+h4WraL1TG5dI=
+
+Name: feature.xml
+SHA1-Digest: /D8mYExXPBNvekEYQSgVyL8e53I=
+
+Name: bin/gtk/linux/ppc/launcher
+SHA1-Digest: SYbGDzUfyL7P9LRuEKmn/g22kV0=
+
+Name: bin/gtk/linux/s390x/launcher
+SHA1-Digest: ePUeUapHKR5R4OpGD9csUb+j80E=
+
+Name: bin/gtk/linux/ppc64/launcher
+SHA1-Digest: qECAeYf1mp6LtIERxUgLwEVBneI=
+
+Name: bin/cocoa/macosx/x86_64/Eclipse.app/Contents/Info.plist
+SHA1-Digest: PdEHCsCgI5IXbkB7RBW9joJMh3g=
+
+Name: bin/gtk/linux/s390/launcher
+SHA1-Digest: Kowqq8ZE3AX2um/Q3ffYppK3GNo=
+
+Name: bin/cocoa/macosx/x86/Eclipse.app/Contents/MacOS/launcher
+SHA1-Digest: muMjWPEJu3kF/WfNNsa+hXeOF0A=
+
+Name: feature.properties
+SHA1-Digest: UKkHsH9PwKao4sclcJLLFBYAvYw=
+
+Name: bin/gtk/linux/x86/launcher
+SHA1-Digest: 1BFL9jWcuQTtE9cg4+yt1hasf28=
+
+Name: bin/win32/win32/x86/launcher.exe
+SHA1-Digest: cwf7iWvIiODAZlMYxqp54SnBV0A=
+
+Name: bin/gtk/hpux/ia64/launcher
+SHA1-Digest: n/RRi2VaVf2uzTlO6dVc/1XdtLU=
+
+Name: build.properties
+SHA1-Digest: bhwCKBAbfel/d6w69pBztoexxPE=
+
+Name: bin/gtk/linux/x86_64/launcher
+SHA1-Digest: rDTJVEnEm+dQHIen/63WR00SRkY=
+
+Name: license.html
+SHA1-Digest: leexLIIUuWA4wkAPsn1Q3CxJw/0=
+
+Name: bin/cocoa/macosx/x86/Eclipse.app/Contents/Info.plist
+SHA1-Digest: OZn3LxlJxgiM/yKFVsMqCF5i19g=
+
+Name: bin/win32/win32/x86_64/launcher.exe
+SHA1-Digest: 9Dt3jcBIidnifdKCl4ZdG2RzVew=
+

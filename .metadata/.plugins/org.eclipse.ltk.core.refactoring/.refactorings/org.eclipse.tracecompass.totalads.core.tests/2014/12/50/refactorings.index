@@ -1,0 +1,18 @@
+1418492470319	Rename resource 'pom.xml'
+1418502748574	Rename package 'org.eclipse.tracecompass.totalads.algorithms'
+1418502797688	Rename package 'org.eclipse.tracecompass.totalads.algorithms.hiddenmarkovmodel'
+1418502817222	Rename package 'org.eclipse.tracecompass.totalads.algorithms.slidingwindow'
+1418502832171	Rename package 'org.eclipse.tracecompass.totalads.algorithms.ksm'
+1418502855634	Rename package 'org.eclipse.tracecompass.totalads.dbms'
+1418502870191	Rename package 'org.eclipse.tracecompass.totalads.readers'
+1418502884800	Rename package 'org.eclipse.tracecompass.totalads.readers.ctfreaders'
+1418502896702	Rename package 'org.eclipse.tracecompass.totalads.readers.textreaders'
+1418502911647	Rename package 'org.eclipse.tracecompass.totalads.traces'
+1418502958855	Move compilation unit
+1418505895481	Rename type 'AllTotalADSTests'
+1418506235177	Rename type 'AllTests'
+1418506902663	Delete element
+1418507013575	Copy compilation unit
+1418507714563	Delete elements
+1418508087258	Rename resource 'TotalADSTestPlugin'
+1418508106239	Delete element

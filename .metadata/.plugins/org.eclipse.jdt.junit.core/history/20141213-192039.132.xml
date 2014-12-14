@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="KernelStateModelingTest" project="org.eclipse.tracecompass.totalads.core.tests" tests="16" started="16" failures="0" errors="0" ignored="0">
+  <testsuite name="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.538">
+    <testcase name="testGetSettingsToDisplay" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.135"/>
+    <testcase name="testTrain" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.159"/>
+    <testcase name="testTest" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+    <testcase name="testGetAcronym" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+    <testcase name="testValidate" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.001"/>
+    <testcase name="testGetTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.004"/>
+    <testcase name="testSaveTestSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.008"/>
+    <testcase name="testGetName" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+    <testcase name="testKernelStateModeling" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+    <testcase name="testInitializeModelAndSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.076"/>
+    <testcase name="testCreateInstance" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+    <testcase name="testIsOnlineLearningSupported" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+    <testcase name="testRegisterModel" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.0"/>
+    <testcase name="testGetDescription" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.001"/>
+    <testcase name="testGetTotalAnomalyPercentage" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.001"/>
+    <testcase name="testGetTrainingSettings" classname="org.eclipse.tracecompass.totalads.core.tests.algorithms.ksm.KernelStateModelingTest" time="0.152"/>
+  </testsuite>
+</testrun>
