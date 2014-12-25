@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.tracecompass.ctf"
+      label="%featureName"
+      version="0.1.0.201412180901"
+      provider-name="%featureProvider">
+
+   <description url="http://www.example.com/description">
+      %description
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="Linux Tools Update Site" url="http://download.eclipse.org/linuxtools/update"/>
+   </url>
+
+   <requires>
+      <import plugin="org.antlr.runtime" version="3.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.tracecompass.ctf.parser"
+         download-size="125"
+         install-size="267"
+         version="0.1.0.201412180901"/>
+
+   <plugin
+         id="org.eclipse.tracecompass.ctf.core"
+         download-size="173"
+         install-size="366"
+         version="0.1.0.201412180901"
+         unpack="false"/>
+
+</feature>

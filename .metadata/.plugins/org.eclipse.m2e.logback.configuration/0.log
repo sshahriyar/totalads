@@ -197,3 +197,5 @@
 2014-12-13 21:24:37,071 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
 2014-12-13 21:40:22,786 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/shary/workspace/totalads/org.eclipse.tracecompass.totalads.core.tests
 2014-12-13 21:40:22,800 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2014-12-16 15:38:23,701 [Worker-16] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/shary/workspace/totalads/org.eclipse.tracecompass.totalads.ui.swtbot.tests
+2014-12-16 15:38:23,729 [Worker-16] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install

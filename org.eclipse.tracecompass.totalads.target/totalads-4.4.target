@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="totalads-4.4" sequenceNumber="54">
+<?pde version="3.8"?><target name="totalads-4.4" sequenceNumber="56">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.license.feature.group" version="0.0.0"/>
@@ -56,6 +56,18 @@
 <unit id="org.apache.commons.math.source" version="2.1.0.v201105210652"/>
 <unit id="org.apache.commons.compress" version="1.6.0.v201310281400"/>
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.tracecompass.lttng2.ust.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.tracecompass.gdbtrace.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.tracecompass.btf.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.tracecompass.tmf.pcap.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.tracecompass.lttng2.kernel.feature.group" version="0.0.0"/>
+<repository location="http://download.eclipse.org/tracecompass/master/nightly"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.remote.feature.group" version="1.1.0.201409111520"/>
+<repository location="http://download.eclipse.org/tools/ptp/updates/luna"/>
 </location>
 </locations>
 <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>

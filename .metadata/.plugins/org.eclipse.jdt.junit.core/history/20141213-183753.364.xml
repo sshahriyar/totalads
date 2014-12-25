@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TraceTypeFactoryTest.testGetAllTraceReaders" project="org.eclipse.tracecompass.totalads.core.tests" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testcase name="testGetAllTraceReaders" classname="org.eclipse.tracecompass.totalads.core.tests.readers.TraceTypeFactoryTest" time="0.263"/>
-</testrun>

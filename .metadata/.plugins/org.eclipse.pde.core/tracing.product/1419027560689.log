@@ -1,0 +1,474 @@
+!SESSION 2014-12-19 17:19:20.320 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Framework arguments:  -product org.eclipse.tracecompass.rcp.branding.product --launcher.XXMaxPermSize 256m --launcher.GTK_version 2
+Command-line arguments:  -product org.eclipse.tracecompass.rcp.branding.product -data /home/shary/workspace/totalads/../runtime-tracing.product -dev file:/home/shary/workspace/totalads/.metadata/.plugins/org.eclipse.pde.core/tracing.product/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog -consolelog --launcher.XXMaxPermSize 256m -data @noDefault --launcher.GTK_version 2
+
+!ENTRY org.eclipse.tracecompass.totalads.core 4 0 2014-12-19 17:19:22.050
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.totalads.core [180]
+  Unresolved requirement: Import-Package: org.eclipse.tracecompass.ctf.core
+    -> Export-Package: org.eclipse.tracecompass.ctf.core; bundle-version="0.1.0.201412180901"; bundle-symbolic-name="org.eclipse.tracecompass.ctf.core"; version="0.0.0"
+       org.eclipse.tracecompass.ctf.core [213]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.totalads.ui 4 0 2014-12-19 17:19:22.053
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.totalads.ui [181]
+  Unresolved requirement: Import-Package: org.eclipse.tracecompass.tmf.core.signal
+    -> Export-Package: org.eclipse.tracecompass.tmf.core.signal; bundle-version="0.1.0.201412180901"; bundle-symbolic-name="org.eclipse.tracecompass.tmf.core"; version="0.0.0"
+       org.eclipse.tracecompass.tmf.core [226]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.remote.jsch.ui 4 0 2014-12-19 17:19:22.059
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.remote.jsch.ui [211]
+  Unresolved requirement: Require-Bundle: org.eclipse.remote.ui
+    -> Bundle-SymbolicName: org.eclipse.remote.ui; bundle-version="1.1.0.201409111520"; singleton:="true"
+       org.eclipse.remote.ui [212]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.trace
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.remote.ui 4 0 2014-12-19 17:19:22.064
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.remote.ui [212]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.trace
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.ctf.core 4 0 2014-12-19 17:19:22.069
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.ctf.core [213]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.lttng2.control.core 4 0 2014-12-19 17:19:22.075
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.lttng2.control.core [216]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.ctf.core; bundle-version="0.1.0"
+    -> Bundle-SymbolicName: org.eclipse.tracecompass.ctf.core; bundle-version="0.1.0.201412180901"; singleton:="true"
+       org.eclipse.tracecompass.ctf.core [213]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.lttng2.control.ui 4 0 2014-12-19 17:19:22.082
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.lttng2.control.ui [217]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.lttng2.control.core; bundle-version="0.1.0"
+    -> Bundle-SymbolicName: org.eclipse.tracecompass.lttng2.control.core; bundle-version="0.1.0.201412180901"; singleton:="true"
+       org.eclipse.tracecompass.lttng2.control.core [216]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.ctf.core; bundle-version="0.1.0"
+           -> Bundle-SymbolicName: org.eclipse.tracecompass.ctf.core; bundle-version="0.1.0.201412180901"; singleton:="true"
+              org.eclipse.tracecompass.ctf.core [213]
+                Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.lttng2.kernel.core 4 0 2014-12-19 17:19:22.087
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.lttng2.kernel.core [218]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.lttng2.kernel.ui 4 0 2014-12-19 17:19:22.092
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.lttng2.kernel.ui [219]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.lttng2.ust.core 4 0 2014-12-19 17:19:22.096
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.lttng2.ust.core [220]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.lttng2.ust.ui 4 0 2014-12-19 17:19:22.100
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.lttng2.ust.ui [221]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.lttng2.ust.core; bundle-version="0.1.0"
+    -> Bundle-SymbolicName: org.eclipse.tracecompass.lttng2.ust.core; bundle-version="0.1.0.201412180901"; singleton:="true"
+       org.eclipse.tracecompass.lttng2.ust.core [220]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.pcap.core 4 0 2014-12-19 17:19:22.101
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.pcap.core [222]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.tmf.analysis.xml.core 4 0 2014-12-19 17:19:22.104
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.tmf.analysis.xml.core [224]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.tmf.analysis.xml.ui 4 0 2014-12-19 17:19:22.107
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.tmf.analysis.xml.ui [225]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.tmf.core 4 0 2014-12-19 17:19:22.109
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.tmf.core [226]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.tmf.ctf.core 4 0 2014-12-19 17:19:22.112
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.tmf.ctf.core [227]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.tmf.pcap.core 4 0 2014-12-19 17:19:22.114
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.tmf.pcap.core [229]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.tmf.pcap.ui 4 0 2014-12-19 17:19:22.117
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.tmf.pcap.ui [231]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.tmf.ui 4 0 2014-12-19 17:19:22.120
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.tmf.ui [232]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.rcp.ui 4 0 2014-12-19 17:19:23.571
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.rcp.ui [172]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.tmf.ui; bundle-version="0.1.0"
+    -> Bundle-SymbolicName: org.eclipse.tracecompass.tmf.ui; bundle-version="0.1.0.201412180901"; singleton:="true"
+       org.eclipse.tracecompass.tmf.ui [232]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.tmf.analysis.xml.ui 2 0 2014-12-19 17:19:23.776
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.tmf.analysis.xml.ui [225]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.tmf.ui 2 0 2014-12-19 17:19:23.777
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.tmf.ui [232]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.totalads.ui 2 0 2014-12-19 17:19:23.778
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.totalads.ui [181]
+  Unresolved requirement: Import-Package: org.eclipse.tracecompass.tmf.core.signal
+    -> Export-Package: org.eclipse.tracecompass.tmf.core.signal; bundle-version="0.1.0.201412180901"; bundle-symbolic-name="org.eclipse.tracecompass.tmf.core"; version="0.0.0"
+       org.eclipse.tracecompass.tmf.core [226]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.lttng2.control.ui 2 0 2014-12-19 17:19:23.779
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.lttng2.control.ui [217]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.lttng2.control.core; bundle-version="0.1.0"
+    -> Bundle-SymbolicName: org.eclipse.tracecompass.lttng2.control.core; bundle-version="0.1.0.201412180901"; singleton:="true"
+       org.eclipse.tracecompass.lttng2.control.core [216]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.ctf.core; bundle-version="0.1.0"
+           -> Bundle-SymbolicName: org.eclipse.tracecompass.ctf.core; bundle-version="0.1.0.201412180901"; singleton:="true"
+              org.eclipse.tracecompass.ctf.core [213]
+                Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.remote.ui 2 0 2014-12-19 17:19:23.780
+!MESSAGE Could not resolve module: org.eclipse.remote.ui [212]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.trace
+
+
+!ENTRY org.eclipse.tracecompass.ctf.core 2 0 2014-12-19 17:19:23.781
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.ctf.core [213]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.totalads.core 2 0 2014-12-19 17:19:23.782
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.totalads.core [180]
+  Unresolved requirement: Import-Package: org.eclipse.tracecompass.ctf.core
+    -> Export-Package: org.eclipse.tracecompass.ctf.core; bundle-version="0.1.0.201412180901"; bundle-symbolic-name="org.eclipse.tracecompass.ctf.core"; version="0.0.0"
+       org.eclipse.tracecompass.ctf.core [213]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.tmf.pcap.ui 2 0 2014-12-19 17:19:23.783
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.tmf.pcap.ui [231]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.remote.jsch.ui 2 0 2014-12-19 17:19:23.783
+!MESSAGE Could not resolve module: org.eclipse.remote.jsch.ui [211]
+  Unresolved requirement: Require-Bundle: org.eclipse.remote.ui
+    -> Bundle-SymbolicName: org.eclipse.remote.ui; bundle-version="1.1.0.201409111520"; singleton:="true"
+       org.eclipse.remote.ui [212]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.trace
+
+
+!ENTRY org.eclipse.tracecompass.lttng2.control.core 2 0 2014-12-19 17:19:23.784
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.lttng2.control.core [216]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.ctf.core; bundle-version="0.1.0"
+    -> Bundle-SymbolicName: org.eclipse.tracecompass.ctf.core; bundle-version="0.1.0.201412180901"; singleton:="true"
+       org.eclipse.tracecompass.ctf.core [213]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.lttng2.ust.ui 2 0 2014-12-19 17:19:23.784
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.lttng2.ust.ui [221]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.lttng2.ust.core; bundle-version="0.1.0"
+    -> Bundle-SymbolicName: org.eclipse.tracecompass.lttng2.ust.core; bundle-version="0.1.0.201412180901"; singleton:="true"
+       org.eclipse.tracecompass.lttng2.ust.core [220]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.pcap.core 2 0 2014-12-19 17:19:23.784
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.pcap.core [222]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.tmf.analysis.xml.core 2 0 2014-12-19 17:19:23.785
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.tmf.analysis.xml.core [224]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.tmf.ctf.core 2 0 2014-12-19 17:19:23.785
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.tmf.ctf.core [227]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.lttng2.kernel.ui 2 0 2014-12-19 17:19:23.786
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.lttng2.kernel.ui [219]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.lttng2.ust.core 2 0 2014-12-19 17:19:23.786
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.lttng2.ust.core [220]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.tmf.pcap.core 2 0 2014-12-19 17:19:23.786
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.tmf.pcap.core [229]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.lttng2.kernel.core 2 0 2014-12-19 17:19:23.787
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.lttng2.kernel.core [218]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.tmf.core 2 0 2014-12-19 17:19:23.787
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.tmf.core [226]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.tracecompass.rcp.ui 2 0 2014-12-19 17:19:23.787
+!MESSAGE Could not resolve module: org.eclipse.tracecompass.rcp.ui [172]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.tmf.ui; bundle-version="0.1.0"
+    -> Bundle-SymbolicName: org.eclipse.tracecompass.tmf.ui; bundle-version="0.1.0.201412180901"; singleton:="true"
+       org.eclipse.tracecompass.tmf.ui [232]
+         Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.common.core
+
+
+!ENTRY org.eclipse.osgi 4 0 2014-12-19 17:19:23.788
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: Application "org.eclipse.tracecompass.rcp.ui.application" could not be found in the registry. The applications available are: org.eclipse.ant.core.antRunner, org.eclipse.cdt.core.GeneratePDOM, org.eclipse.e4.ui.workbench.swt.E4Application, org.eclipse.e4.ui.workbench.swt.GenTopic, org.eclipse.equinox.app.error, org.eclipse.equinox.p2.director, org.eclipse.equinox.p2.garbagecollector.application, org.eclipse.equinox.p2.publisher.InstallPublisher, org.eclipse.equinox.p2.publisher.EclipseGenerator, org.eclipse.equinox.p2.publisher.ProductPublisher, org.eclipse.equinox.p2.publisher.FeaturesAndBundlesPublisher, org.eclipse.equinox.p2.reconciler.application, org.eclipse.equinox.p2.repository.repo2runnable, org.eclipse.equinox.p2.repository.metadataverifier, org.eclipse.equinox.p2.artifact.repository.mirrorApplication, org.eclipse.equinox.p2.metadata.repository.mirrorApplication, org.eclipse.equinox.p2.updatesite.UpdateSitePublisher, org.eclipse.equinox.p2.publisher.UpdateSitePublisher, org.eclipse.equinox.p2.publisher.CategoryPublisher, org.eclipse.help.base.infocenterApplication, org.eclipse.help.base.helpApplication, org.eclipse.help.base.indexTool, org.eclipse.ui.ide.workbench.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:248)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:29)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)

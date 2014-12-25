@@ -1,0 +1,40 @@
+!SESSION 2014-12-24 19:04:43.812 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Framework arguments:  -product org.eclipse.tracecompass.rcp.branding.product --launcher.XXMaxPermSize 256m --launcher.GTK_version 2
+Command-line arguments:  -product org.eclipse.tracecompass.rcp.branding.product -data /home/shary/workspace/totalads/../runtime-tracing.product -dev file:/home/shary/workspace/totalads/.metadata/.plugins/org.eclipse.pde.core/tracing.product/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog -consolelog --launcher.XXMaxPermSize 256m -data @noDefault --launcher.GTK_version 2
+
+!ENTRY org.eclipse.tracecompass.totalads.core 4 0 2014-12-24 19:04:51.798
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.totalads.core [251]
+  Unresolved requirement: Require-Bundle: org.eclipse.orbit.mongodb; bundle-version="2.10.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.tracecompass.totalads.ui 4 0 2014-12-24 19:04:51.823
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tracecompass.totalads.ui [252]
+  Unresolved requirement: Require-Bundle: org.eclipse.tracecompass.totalads.core
+    -> Bundle-SymbolicName: org.eclipse.tracecompass.totalads.core; bundle-version="0.1.0.qualifier"
+       org.eclipse.tracecompass.totalads.core [251]
+         Unresolved requirement: Require-Bundle: org.eclipse.orbit.mongodb; bundle-version="2.10.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)

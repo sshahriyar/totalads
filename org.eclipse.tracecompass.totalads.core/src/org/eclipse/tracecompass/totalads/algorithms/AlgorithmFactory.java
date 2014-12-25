@@ -195,6 +195,7 @@ public class AlgorithmFactory {
             KernelStateModeling.registerAlgorithm();
             SequenceMatching.registerAlgorithm();
             HiddenMarkovModel.registerAlgorithm();
+
             init=true;
         }
 

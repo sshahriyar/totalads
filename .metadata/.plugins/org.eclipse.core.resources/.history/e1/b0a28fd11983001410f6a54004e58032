@@ -1,5 +1,0 @@
-#output.. = bin/
-bin.includes = META-INF/,\
-               sampletraces/get-traces.xml,\
-               OSGI-INF/
-src.includes = about.html
