@@ -36,11 +36,11 @@
             <goals>
               <goal>source-feature</goal>
             </goals>
-            <!-- <configuration>
-               <excludes>
-                <plugin id="org.eclipse.totalads.help"/>
+            <configuration>
+              <excludes>
+                <plugin id="org.eclipse.linuxtools.lttng.help"/>
               </excludes>
-            </configuration>-->
+            </configuration>
           </execution>
         </executions>
       </plugin>

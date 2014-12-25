@@ -63,6 +63,12 @@
     <id>trace-compass-nightly</id>
     <url>http://download.eclipse.org/tracecompass/master/nightly/</url>
   </pluginRepository>
+<pluginRepository>
+    <id>jboss-public-repository-group</id>
+    <name>JBoss Public Repository Group</name>
+    <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+  </pluginRepository>
+
 </pluginRepositories>
 
 <profiles>
@@ -128,10 +134,12 @@
     
 <module>org.eclipse.tracecompass.totalads.target</module>
 <module>org.eclipse.tracecompass.totalads.libraries</module>    
-    <module>org.eclipse.tracecompass.totalads.core</module>
+<module>org.eclipse.tracecompass.totalads</module>    
+<module>org.eclipse.tracecompass.totalads.core</module>
 <module>org.eclipse.tracecompass.totalads.core.tests</module>
         <module>org.eclipse.tracecompass.totalads.ui</module>
     <module>org.eclipse.tracecompass.totalads.ui.swtbot.tests</module>
+<!-- <module>org.eclipse.tracecompass.releng-site</module> -->
 <module>org.eclipse.tracecompass.rcp.branding</module>
     <module>org.eclipse.tracecompass.rcp.branding.feature</module>
     <module>org.eclipse.tracecompass.rcp</module>
