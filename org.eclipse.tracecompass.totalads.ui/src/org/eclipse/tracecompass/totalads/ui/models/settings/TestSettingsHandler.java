@@ -12,8 +12,7 @@
 package org.eclipse.tracecompass.totalads.ui.models.settings;
 
 import java.util.HashSet;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
@@ -148,7 +147,7 @@ public class TestSettingsHandler implements IHandler {
                     ex.getMessage());
           //  msgBoxErr.setMessage(ex.getMessage());
            // msgBoxErr.open();
-            Logger.getLogger(TestSettingsHandler.class.getName()).log(Level.SEVERE, ex.getMessage(), ex);
+            Logger.getLogger(TestSettingsHandler.class.getName()).error(ex.getMessage(), ex);
             // Check if connection still exists and all the views are notified
             // of the presence and absence of connection
             DBMSFactory.INSTANCE.verifyConnection();

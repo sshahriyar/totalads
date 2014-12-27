@@ -13,9 +13,7 @@ package org.eclipse.tracecompass.totalads.ui.models.delete;
 
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import org.apache.log4j.Logger;
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.commands.IHandler;
@@ -161,7 +159,7 @@ public class DeleteModelHandler implements IHandler {
                         msgTitle,Messages.DeleteModelHandler_ErrDel);
             }
 
-            Logger.getLogger(DeleteModelHandler.class.getName()).log(Level.SEVERE, ex.getMessage(), ex);
+            Logger.getLogger(DeleteModelHandler.class.getName()).error(ex.getMessage(), ex);
             // Check if connection still exists and all the views are notified
             // of the presence and absence of connection
             DBMSFactory.INSTANCE.verifyConnection();

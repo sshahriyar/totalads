@@ -12,8 +12,7 @@
 package org.eclipse.tracecompass.totalads.ui.modeling;
 
 import java.util.HashSet;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.tracecompass.totalads.algorithms.AlgorithmOutStream;
@@ -110,7 +109,7 @@ public class BackgroundModeling implements Runnable {
             } else {
                 msg = ex.getMessage();
             }
-            Logger.getLogger(BackgroundModeling.class.getName()).log(Level.WARNING, msg, ex);
+            Logger.getLogger(BackgroundModeling.class.getName()).warn(msg, ex);
 
         } catch (TotalADSReaderException ex) {// handle Reader exceptions here
             if (ex.getMessage() == null) {
@@ -118,7 +117,7 @@ public class BackgroundModeling implements Runnable {
             } else {
                 msg = ex.getMessage();
             }
-            Logger.getLogger(BackgroundModeling.class.getName()).log(Level.WARNING, msg, ex);
+            Logger.getLogger(BackgroundModeling.class.getName()).warn(msg, ex);
 
         } catch (Exception ex) { // handle all other exceptions here and log
                                  // them too.
@@ -131,7 +130,7 @@ public class BackgroundModeling implements Runnable {
                 msg = ex.getMessage();
             }
             // ex.printStackTrace();
-            Logger.getLogger(BackgroundModeling.class.getName()).log(Level.SEVERE, msg, ex);
+            Logger.getLogger(BackgroundModeling.class.getName()).error( msg, ex);
             // An exception could be thrown due to unavailability of the db,
             // make sure that the connection is not lost
             DBMSFactory.INSTANCE.verifyConnection();

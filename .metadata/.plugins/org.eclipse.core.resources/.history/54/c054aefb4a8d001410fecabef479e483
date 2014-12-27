@@ -1,0 +1,5 @@
+package org.eclipse.tracecompass.totalads.exceptions;
+
+public class UnCaughtExceptionHandler {
+
+}

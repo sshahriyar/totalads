@@ -13,9 +13,7 @@ package org.eclipse.tracecompass.totalads.ui.diagnosis;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import org.apache.log4j.Logger;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.tracecompass.totalads.ui.diagnosis.DiagnosisPartListener;
 import org.eclipse.tracecompass.totalads.ui.diagnosis.DiagnosisView;
@@ -75,7 +73,7 @@ public class DiagnosisPartListener implements IPartListener {
                         msgTitle,Messages.DiagnosisPartListener_UnableToLaunch);
             }
 
-            Logger.getLogger(DiagnosisPartListener.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(DiagnosisPartListener.class.getName()).error(e.getMessage(), e);
         }
 
     }

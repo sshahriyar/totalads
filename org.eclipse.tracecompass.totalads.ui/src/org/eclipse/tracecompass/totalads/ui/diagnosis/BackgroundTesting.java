@@ -13,9 +13,8 @@ package org.eclipse.tracecompass.totalads.ui.diagnosis;
 import java.io.File;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
+import org.apache.log4j.Logger;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.tracecompass.totalads.algorithms.AlgorithmOutStream;
 import org.eclipse.tracecompass.totalads.algorithms.AlgorithmUtility;
@@ -102,8 +101,10 @@ public class BackgroundTesting implements Runnable, IAlgorithmUtilityResultsList
 
             if (fileList==null){
                 throw new TotalADSGeneralException(Messages.BackgroundTesting_NoFiles);
+
             }else  if (fileList.length > 15000) {
                 throw new TotalADSGeneralException(Messages.BackgroundTesting_TraceLimit);
+
             }
 
             AlgorithmUtility.testModels(fTestDirectory, fTraceReader, fModels, outStreamAlg,this);
@@ -114,6 +115,7 @@ public class BackgroundTesting implements Runnable, IAlgorithmUtilityResultsList
             Long elapsedMins = stopwatch.elapsed(TimeUnit.MINUTES);
             Long elapsedSecs = stopwatch.elapsed(TimeUnit.SECONDS);
             console.println(NLS.bind(Messages.BackgroundTesting_TotalTime, elapsedMins.toString() , elapsedSecs));
+
 
         } catch (TotalADSGeneralException ex) {// handle UI exceptions here
             // UI exceptions are simply notifications--no need to log them
@@ -128,16 +130,16 @@ public class BackgroundTesting implements Runnable, IAlgorithmUtilityResultsList
                 msg = Messages.BackgroundTesting_CommonException;
             }
             else {
-                msg = Messages.BackgroundTesting_DBMSException + ex.getMessage();
+                msg = NLS.bind(Messages.BackgroundTesting_DBMSException, ex.getMessage());
             }
-            Logger.getLogger(BackgroundModeling.class.getName()).log(Level.WARNING, msg, ex);
+            Logger.getLogger(BackgroundModeling.class.getName()).warn(msg, ex);
         } catch (TotalADSReaderException ex) {// handle Reader exceptions here
             if (ex.getMessage() == null) {
                 msg = Messages.BackgroundTesting_CommonException;
             } else {
-                msg = Messages.BackgroundTesting_ReaderException + ex.getMessage();
+                msg = NLS.bind(Messages.BackgroundTesting_ReaderException , ex.getMessage());
             }
-            Logger.getLogger(BackgroundModeling.class.getName()).log(Level.WARNING, msg, ex);
+            Logger.getLogger(BackgroundModeling.class.getName()).warn(msg, ex);
         } catch (Exception ex) { // handle all other exceptions here and log
                                  // them too
             if (ex.getMessage() == null) {
@@ -145,7 +147,7 @@ public class BackgroundTesting implements Runnable, IAlgorithmUtilityResultsList
             } else {
                 msg = ex.getMessage();
             }
-            Logger.getLogger(BackgroundTesting.class.getName()).log(Level.SEVERE, msg, ex);
+            Logger.getLogger(BackgroundTesting.class.getName()).error(msg, ex);
             // An exception could be thrown due to unavailability of the db,
             // make sure that the connection is not lost
             DBMSFactory.INSTANCE.verifyConnection();

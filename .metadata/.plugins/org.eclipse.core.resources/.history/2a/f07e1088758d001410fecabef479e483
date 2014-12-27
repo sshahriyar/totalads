@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8' ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Trace Viewer User Guide - Opening a Trace</title>
+		<link type="text/css" rel="stylesheet" href="book.css"/>
+	</head>
+	<body>
+		<table class="navigation" style="width: 100%;" border="0" summary="navigation">
+			<tr>
+				<th style="width: 100%" align="center" colspan="3">Opening a Trace</th>
+			</tr>
+			<tr>
+				<td style="width: 20%" align="left">
+					<a href="Getting-Started.html" title="Getting Started">
+						<img alt="Previous" border="0" src="images/prev.gif"/>
+					</a>
+				</td>
+				<td style="width: 60%" align="center"></td>
+				<td style="width: 20%" align="right">
+					<a href=TotalADS.html" title="TotalADS">
+						<img alt="Next" border="0" src="images/next.gif"/>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 20%" align="left" valign="top">Getting Started</td>
+				<td style="width: 60%" align="center"></td>
+				<td style="width: 20%" align="right" valign="top">TotalADS</td>
+			</tr>
+		</table><hr/>
+		<h1 id="Opening_a_Trace">Opening a Trace</h1>
+		<p>To open a trace, click on the
+			<b>File</b> menu and select
+			<b>Open Trace...</b>.
+			A new dialog will show for selecting a trace to open. Select a trace file
+			and then click on
+			<b>OK</b>. Note that for traces that are directories
+			(such as Common Trace Format (CTF) traces) any file in the trace directory can
+			be selected to open the trace. Now, the trace viewer's auto detection algorithm
+			will validate the trace against all known trace types. If multiple trace types
+			are valid, a trace type is chosen based on a confidence criteria. The
+			validation process and the computation of the confidence level are trace type
+			specific. After successful validation the trace will be opened with the
+			detected trace type.
+		</p>
+		<p>Alternatively the user can launch the trace viewer with the command-line
+			argument
+			<b>--open &lt;trace-path&gt;</b>. The trace will then automatically open
+			using the same algorithm than described above.
+		</p>
+		<p>In both of the above cases, the trace will be linked to the default project.</p><hr/>
+		<table class="navigation" style="width: 100%;" border="0" summary="navigation">
+			<tr>
+				<td style="width: 20%" align="left">
+					<a href="Getting-Started.html" title="Getting Started">
+						<img alt="Previous" border="0" src="images/prev.gif"/>
+					</a>
+				</td>
+				<td style="width: 60%" align="center">
+					<a href="User-Guide.html" title="Trace Viewer User Guide">
+						<img alt="Trace Viewer User Guide" border="0" src="images/home.gif"/>
+					</a>
+				</td>
+				<td style="width: 20%" align="right">
+					<a href="References.html" title="References">
+						<img alt="Next" border="0" src="images/next.gif"/>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 20%" align="left" valign="top">Getting Started</td>
+				<td style="width: 60%" align="center"></td>
+				<td style="width: 20%" align="right" valign="top">References</td>
+			</tr>
+		</table>
+	</body>
+</html>

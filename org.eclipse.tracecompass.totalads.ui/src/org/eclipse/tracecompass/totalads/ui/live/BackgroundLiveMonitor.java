@@ -18,8 +18,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.osgi.util.NLS;
@@ -247,19 +246,19 @@ public class BackgroundLiveMonitor implements Runnable {
 
         } catch (TotalADSNetException ex) {
             exception = ex.getMessage();
-            Logger.getLogger(BackgroundLiveMonitor.class.getName()).log(Level.SEVERE, exception, ex);
+            Logger.getLogger(BackgroundLiveMonitor.class.getName()).error(exception, ex);
 
         } catch (TotalADSReaderException ex) {
             exception = ex.getMessage();
-            Logger.getLogger(BackgroundLiveMonitor.class.getName()).log(Level.SEVERE, exception, ex);
+            Logger.getLogger(BackgroundLiveMonitor.class.getName()).error(exception, ex);
 
         } catch (TotalADSDBMSException ex) {
             exception = ex.getMessage();
-            Logger.getLogger(BackgroundLiveMonitor.class.getName()).log(Level.SEVERE, exception, ex);
+            Logger.getLogger(BackgroundLiveMonitor.class.getName()).error(exception, ex);
 
         } catch (TotalADSGeneralException ex) {
             exception = ex.getMessage();
-            Logger.getLogger(BackgroundLiveMonitor.class.getName()).log(Level.SEVERE, exception, ex);
+            Logger.getLogger(BackgroundLiveMonitor.class.getName()).error(exception, ex);
 
         } catch (Exception ex) {
             if (ex.getMessage() != null) {
@@ -268,7 +267,7 @@ public class BackgroundLiveMonitor implements Runnable {
                 exception = Messages.BackgroundLiveMonitor_UnknwonErr;
             }
 
-            Logger.getLogger(BackgroundLiveMonitor.class.getName()).log(Level.SEVERE, exception, ex);
+            Logger.getLogger(BackgroundLiveMonitor.class.getName()).error(exception, ex);
             ex.printStackTrace();
             // An exception could be thrown due to unavailability of the db,
             // make sure that the connection is not lost

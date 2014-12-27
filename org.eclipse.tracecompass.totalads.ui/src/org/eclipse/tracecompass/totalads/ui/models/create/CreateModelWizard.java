@@ -11,8 +11,7 @@
 
 package org.eclipse.tracecompass.totalads.ui.models.create;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.wizard.IWizardPage;
@@ -122,7 +121,7 @@ public class CreateModelWizard extends Wizard {
             exception = e.getMessage();
         } catch (Exception ex) {
             exception = ex.getMessage();
-            Logger.getLogger(TestSettingsHandler.class.getName()).log(Level.SEVERE, ex.getMessage(), ex);
+            Logger.getLogger(TestSettingsHandler.class.getName()).error( ex.getMessage(), ex);
             // Check if connection still exists and all the views are notified
             // of the presence and absence of connection
             DBMSFactory.INSTANCE.verifyConnection();

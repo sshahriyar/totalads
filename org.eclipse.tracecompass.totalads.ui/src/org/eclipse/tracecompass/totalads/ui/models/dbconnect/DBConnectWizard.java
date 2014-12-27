@@ -75,10 +75,6 @@ public class DBConnectWizard extends Wizard {
 
         String exception = ""; //$NON-NLS-1$
         String msgTitle = "TotalADS"; //$NON-NLS-1$
-        // MessageBox msgBoxErr= new
-        // MessageBox(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell()
-        // ,
-        // SWT.ICON_ERROR);
         try {
             // DBMSFactory.INSTANCE.init();
 

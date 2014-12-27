@@ -11,8 +11,7 @@
 package org.eclipse.tracecompass.totalads.ui.modeling;
 
 import java.util.HashSet;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.ISelection;
@@ -101,7 +100,7 @@ public class ModelingView extends ViewPart {
                 MessageDialog.openError( getSite().getShell(), msgTitle,Messages.ModelingView_UnableToLaunch);
             }
 
-            Logger.getLogger(Modeling.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(Modeling.class.getName()).error(e.getMessage(), e);
         }
 
     }

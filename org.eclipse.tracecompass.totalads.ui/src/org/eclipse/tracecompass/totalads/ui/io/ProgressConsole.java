@@ -12,11 +12,8 @@
 package org.eclipse.tracecompass.totalads.ui.io;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import org.apache.log4j.Logger;
 import org.eclipse.tracecompass.totalads.algorithms.IAlgorithmOutObserver;
-import org.eclipse.tracecompass.totalads.ui.live.BackgroundLiveMonitor;
 import org.eclipse.ui.console.MessageConsole;
 import org.eclipse.ui.console.MessageConsoleStream;
 import org.eclipse.ui.console.ConsolePlugin;
@@ -59,6 +56,7 @@ public class ProgressConsole implements IAlgorithmOutObserver {
      */
     public void println(String message) {
         fOutStream.println(message);
+
     }
 
     /**
@@ -104,7 +102,7 @@ public class ProgressConsole implements IAlgorithmOutObserver {
         try {
             fOutStream.close();
         } catch (IOException ex) {
-            Logger.getLogger(BackgroundLiveMonitor.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ProgressConsole.class.getName()).error(ex.getMessage(), ex);
             ex.printStackTrace();
         }
     }

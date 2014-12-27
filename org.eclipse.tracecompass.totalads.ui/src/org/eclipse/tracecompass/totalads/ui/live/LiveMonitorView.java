@@ -12,8 +12,7 @@
 package org.eclipse.tracecompass.totalads.ui.live;
 
 import java.util.HashSet;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.ISelection;
@@ -103,7 +102,7 @@ public class LiveMonitorView extends ViewPart implements ISelectionListener, ILi
                         msgTitle,Messages.LiveMonitorView_UnableToLaunch);
             }
 
-            Logger.getLogger(LiveMonitor.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(LiveMonitor.class.getName()).error(e.getMessage(), e);
 
         }
 

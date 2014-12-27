@@ -5,7 +5,8 @@ Bundle-SymbolicName: org.eclipse.tracecompass.totalads.libraries
 Bundle-Version: 0.1.0
 Bundle-ClassPath: .
 Bundle-Vendor: Third Parties
-Export-Package: com.google.common.annotations,
+Export-Package: airbrake,
+ com.google.common.annotations,
  com.google.common.base,
  com.google.common.base.internal,
  com.google.common.cache,
@@ -405,5 +406,6 @@ Require-Bundle: org.eclipse.core.runtime,
  org.apache.commons.io,
  javax.xml,
  org.eclipse.orbit.mongodb,
- org.apache.commons.compress;bundle-version="1.6.0"
+ org.apache.commons.compress;bundle-version="1.6.0",
+ org.apache.log4j;bundle-version="1.2.15"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7

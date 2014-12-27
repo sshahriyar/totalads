@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8' ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Trace Viewer User Guide - Getting Started</title>
+		<link type="text/css" rel="stylesheet" href="book.css"/>
+	</head>
+	<body>
+		<table class="navigation" style="width: 100%;" border="0" summary="navigation">
+			<tr>
+				<th style="width: 100%" align="center" colspan="3">Getting Started</th>
+			</tr>
+			<tr>
+				<td style="width: 20%" align="left">
+					<a href="User-Guide.html" title="Overview">
+						<img alt="Previous" border="0" src="images/prev.gif"/>
+					</a>
+				</td>
+				<td style="width: 60%" align="center"></td>
+				<td style="width: 20%" align="right">
+					<a href="Opening-a-Trace.html" title="Opening a Trace">
+						<img alt="Next" border="0" src="images/next.gif"/>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 20%" align="left" valign="top">Overview</td>
+				<td style="width: 60%" align="center"></td>
+				<td style="width: 20%" align="right" valign="top">Opening a Trace</td>
+			</tr>
+		</table><hr/>
+		<h1 id="Getting_Started">Getting Started</h1>
+		<p>To start the Linux Tools Trace Viewer, go to the directory where the Trace
+			Viewer is installed and then run the application named 
+			<b>traceViewer</b>.
+			During startup, the Trace Viewer will create, if necessary, an Eclipse workspace
+			in the user's home directory with the name 
+			<i>.traceviewer</i>. It also creates, if
+			needed, a default tracing project called 
+			<i>Tracing</i>.
+		</p>
+		<p>Now the application can be used as described in the User Guide for Linux Tools
+			LTTng integration (see section 
+			<a href="References.html#References">References</a>).
+		</p><hr/>
+		<table class="navigation" style="width: 100%;" border="0" summary="navigation">
+			<tr>
+				<td style="width: 20%" align="left">
+					<a href="User-Guide.html" title="Overview">
+						<img alt="Previous" border="0" src="images/prev.gif"/>
+					</a>
+				</td>
+				<td style="width: 60%" align="center">
+					<a href="User-Guide.html" title="Trace Viewer User Guide">
+						<img alt="Trace Viewer User Guide" border="0" src="images/home.gif"/>
+					</a>
+				</td>
+				<td style="width: 20%" align="right">
+					<a href="Opening-a-Trace.html" title="Opening a Trace">
+						<img alt="Next" border="0" src="images/next.gif"/>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 20%" align="left" valign="top">Overview</td>
+				<td style="width: 60%" align="center"></td>
+				<td style="width: 20%" align="right" valign="top">Opening a Trace</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -14,8 +14,7 @@ package org.eclipse.tracecompass.totalads.ui.properties;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.ArrayContentProvider;
@@ -166,7 +165,7 @@ public class PropertiesView extends ViewPart implements ISelectionListener {
             } else {
                 msg = Messages.PropertiesView_UnknwonErr;
             }
-            Logger.getLogger(PropertiesView.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(PropertiesView.class.getName()).error(e.getMessage(), e);
         } finally {
             // Display error message if there is something wrong
             if (!msg.isEmpty()) {

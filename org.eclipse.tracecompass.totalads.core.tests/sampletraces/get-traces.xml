@@ -12,14 +12,14 @@
 <target name="main">
   <antcall>
     <target name="checkAnyTraceExists"/>
-    <target name="verifyChecksum"/>
-    <target name="deleteFailedCheckSumTraces"/>
+   <!-- <target name="verifyChecksum"/>
+    <target name="deleteFailedCheckSumTraces"/> -->
   </antcall>
   <antcall target="downloadTraceFiles"/>
    <condition property="tracesExist">
     <and>
 
-      <available file="trace2.tar.bz2"/>
+      <available file="trace.zip"/>
     </and>
   </condition>
   <antcall target="extractTraces"/>
@@ -69,20 +69,21 @@
 
 <target name="downloadTraceFiles">
   <echo message="Attempting to download test traces"/>
-  <get ignoreerrors="true" maxtime="60" skipexisting="true" dest="trace2.tar.bz2" src="http://archive.eclipse.org/tracecompass/test-traces/ctf/trace2.tar.bz2"/>
+  <get ignoreerrors="true" maxtime="60" skipexisting="true" dest="trace.zip" src="https://docs.google.com/uc?export=download&amp;id=0Bza3MvrNESqgLUxySHVjY0xJY0E"/>
 
 </target>
 
 
 
 <target name="extractTraces" if="tracesExist">
-    <antcall>
+   <!-- <antcall>
       <target name="checkAnyTraceExists"/>
       <target name="verifyChecksum"/>
       <target name="warnFailedCheckSum"/>
     </antcall>
-    <bunzip2 src="trace2.tar.bz2"/>
-   <untar src="trace2.tar" dest="." />
+    <gunzip src="trace.tar.gz"/>
+   <untar src="trace.tar" dest="." /> -->
+	<unzip src="trace.zip" dest="./trace" />
     <echo message="Traces extracted successfully"/>
 </target>
 </project>

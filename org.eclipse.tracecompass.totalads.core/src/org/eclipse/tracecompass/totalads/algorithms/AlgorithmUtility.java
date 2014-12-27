@@ -322,6 +322,7 @@ public class AlgorithmUtility {
 
         IDataAccessObject dao = DBMSFactory.INSTANCE.getDataAccessObject();
         if (!dao.isConnected()) {
+
             throw new TotalADSDBMSException(Messages.AlgorithmUtility_NoDB);
         }
 
@@ -332,6 +333,7 @@ public class AlgorithmUtility {
         }
 
         if (testDirectory.isEmpty()) {
+
             throw new TotalADSGeneralException(Messages.AlgorithmUtility_EmptyTestDir);
         }
 
@@ -407,6 +409,7 @@ public class AlgorithmUtility {
         outStream.addNewLine();
         outStream.addOutputEvent(NLS.bind(Messages.AlgorithmUtility_anomalies, anomCount));
         outStream.addNewLine();
+
         return modelsAndAnomalyCount;
 
     }

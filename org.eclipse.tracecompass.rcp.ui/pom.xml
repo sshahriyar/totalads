@@ -8,7 +8,7 @@
     <artifactId>org.eclipse.tracecompass.rcp.ui</artifactId>
     <groupId>org.eclipse.tracecompass</groupId>
 
-    <name>Trace Compass RCP UI Plug-in</name>
+    <name>TotalADS RCP UI Plug-in</name>
 
     <parent>
       <artifactId>org.eclipse.tracecompass</artifactId>

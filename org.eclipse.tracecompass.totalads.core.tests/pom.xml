@@ -74,7 +74,7 @@
             <phase>clean</phase>
             <configuration>
               <filesets>
-                <fileset><directory>sampletraces/trace2</directory></fileset>
+                <fileset><directory>sampletraces/trace</directory></fileset>
                </filesets>
             </configuration>
             <goals>

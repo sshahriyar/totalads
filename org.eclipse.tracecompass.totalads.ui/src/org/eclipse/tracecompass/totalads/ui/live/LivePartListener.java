@@ -13,8 +13,7 @@ package org.eclipse.tracecompass.totalads.ui.live;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.tracecompass.totalads.ui.live.ILiveObserver;
@@ -74,7 +73,7 @@ public class LivePartListener implements IPartListener {
                         msgTitle,Messages.LivePartListener_UnableToLaunch);
             }
 
-            Logger.getLogger(LivePartListener.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(LivePartListener.class.getName()).error(e.getMessage(), e);
         }
 
     }

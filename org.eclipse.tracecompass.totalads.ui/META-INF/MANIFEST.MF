@@ -12,7 +12,8 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.tracecompass.tmf.ui,
  org.eclipse.tracecompass.tmf.core;bundle-version="0.1.0",
  org.swtchart,
- com.google.gson;bundle-version="2.2.4"
+ com.google.gson;bundle-version="2.2.4",
+ org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Export-Package: org.eclipse.tracecompass.totalads.ui,

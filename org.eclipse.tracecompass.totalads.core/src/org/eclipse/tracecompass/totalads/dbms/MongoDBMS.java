@@ -113,20 +113,22 @@ class MongoDBMS implements IDataAccessObject, IDBMSConnection {
         synchronized (this) {
             try {
 
-                mongoClient = new MongoClient(host, port);
-                mongoClient.setWriteConcern(WriteConcern.JOURNALED);
+               mongoClient = new MongoClient(host, port);
 
                 DB db = mongoClient.getDB(database);
 
                 if (db.authenticate(username, password.toCharArray()) == false) {
                     isConnected = false;
                     message = NLS.bind(Messages.MongoDBMS_AuthFailed, username, database);
+
                 }
                 else {
                     isConnected = true;// if it reaches here then everything is
                                        // fine
 
                 }
+                mongoClient.setWriteConcern(WriteConcern.JOURNALED);
+
 
             } catch (UnknownHostException ex) {
                 isConnected = false;
@@ -209,8 +211,8 @@ class MongoDBMS implements IDataAccessObject, IDBMSConnection {
                 if (isConnected == false) {// This code snippet is a check for
                                            // the breakage of connection during
                                            // the execution
-                    isConnected = true; // if reconnection occurs during
-                                        // execution it will notify all
+                    isConnected = true; // Reconnection occurs during
+                                        // execution and notify all
                                         // observers
                     notifyObservers();
                 }

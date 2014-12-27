@@ -42,7 +42,7 @@ public enum TestTraces {
      * </pre>
      */
 
-    LTTNG_TRACE_DIR("../org.eclipse.tracecompass.totalads.core.tests/sampletraces/trace2/"),
+    LTTNG_TRACE_DIR("../org.eclipse.tracecompass.totalads.core.tests/sampletraces/trace/"),
     /**
      * Trace directory containing text traces
      */

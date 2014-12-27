@@ -12,8 +12,7 @@
 package org.eclipse.tracecompass.totalads.ui.diagnosis;
 
 import java.util.HashSet;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.ISelection;
@@ -116,7 +115,7 @@ public class DiagnosisView extends TmfView implements IDiagnosisObserver, ISelec
                         msgTitle,Messages.DiagnosisView_UnableToLaunch);
             }
 
-            Logger.getLogger(DiagnosisView.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(DiagnosisView.class.getName()).error(e.getMessage(), e);
         }
 
     }

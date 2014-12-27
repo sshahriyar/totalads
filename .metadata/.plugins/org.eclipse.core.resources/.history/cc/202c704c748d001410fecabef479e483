@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<toc topic="doc/User-Guide.html" label="Trace Viewer User Guide">
+	<topic href="doc/User-Guide.html" label="Overview"></topic>
+	<topic href="doc/Getting-Started.html" label="Getting Started"></topic>
+	<topic href="doc/Opening-a-Trace.html" label="Opening a Trace"></topic>
+	<topic href="doc/References.html" label="References"></topic>
+	<anchor id="additions"/>
+ <topic href="doc/TotalADS.html" label="TotalADS">
+ </topic>
+</toc>

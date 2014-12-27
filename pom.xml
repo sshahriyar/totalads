@@ -139,8 +139,7 @@
 <module>org.eclipse.tracecompass.totalads.core.tests</module>
         <module>org.eclipse.tracecompass.totalads.ui</module>
     <module>org.eclipse.tracecompass.totalads.ui.swtbot.tests</module>
-<!-- <module>org.eclipse.tracecompass.releng-site</module> -->
-<module>org.eclipse.tracecompass.rcp.branding</module>
+ <module>org.eclipse.tracecompass.rcp.branding</module>
     <module>org.eclipse.tracecompass.rcp.branding.feature</module>
     <module>org.eclipse.tracecompass.rcp</module>
     <module>org.eclipse.tracecompass.rcp.help</module>
