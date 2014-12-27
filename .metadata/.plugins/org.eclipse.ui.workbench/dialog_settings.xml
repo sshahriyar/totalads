@@ -12,17 +12,17 @@
 		<list key="textEntries">
 		</list>
 	</section>
+	<section name="ZipFileImportWizard">
+		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/shary/workspace/hosted-jars-github/de.flapdoodle.embed.mongo-repo/airbrake-java-2.2.8.jar"/>
+		</list>
+	</section>
 	<section name="NewWizardAction">
 		<item value="org.eclipse.jdt.junit.wizards.NewTestSuiteCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
-		</list>
-	</section>
-	<section name="ZipFileImportWizard">
-		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
-		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
-			<item value="/home/shary/workspace/hosted-jars-github/de.flapdoodle.embed.mongo-repo/airbrake-java-2.2.8.jar"/>
 		</list>
 	</section>
 	<section name="EditorSelectionDialog">
