@@ -80,6 +80,8 @@
                 <plugin id="org.apache.commons.io"/>
                 <plugin id="javax.xml"/>
                 <plugin id="org.apache.commons.compress"/>
+                <plugin id="org.apache.commons.compress"/>
+                <plugin id="org.apache.log4j"/>
               </excludes>
             </configuration>
           </execution>

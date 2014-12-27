@@ -148,13 +148,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.tracecompass.totalads.libraries"
-         download-size="0"
-         install-size="0"
-         version="0.1.0"
-         unpack="false"/>
-
-   <plugin
          id="org.apache.commons.lang"
          download-size="0"
          install-size="0"
@@ -201,5 +194,19 @@
          download-size="0"
          install-size="0"
          version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.tracecompass.totalads.libraries"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.log4j"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.tracecompass.totalads"
+      label="%featureName"
+      version="0.1.0.qualifier"
+      provider-name="%featureProvider"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
+
+   <description url="http://www.example.com/description">
+      %description
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="Linux Tools Update Site" url="http://download.eclipse.org/linuxtools/update"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.help"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources" version="3.8.101" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.tracecompass.tmf.core"/>
+      <import plugin="org.eclipse.tracecompass.tmf.ctf.core"/>
+      <import plugin="org.eclipse.tracecompass.lttng2.kernel.core" version="0.1.0" match="greaterOrEqual"/>
+      <import plugin="com.jcraft.jsch" version="0.1.50" match="greaterOrEqual"/>
+      <import plugin="org.swtchart" version="0.7.0" match="greaterOrEqual"/>
+      <import plugin="com.google.guava" version="15.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.orbit.mongodb" version="2.10.1" match="greaterOrEqual"/>
+      <import plugin="com.google.gson" version="2.2.4" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.math" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.tracecompass.totalads.libraries" version="0.1.0" match="greaterOrEqual"/>
+      <import plugin="org.antlr.runtime" version="3.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.tracecompass.ctf.parser" version="0.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.tracecompass.ctf.core"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.tracecompass.lttng2.control.ui"/>
+      <import plugin="org.eclipse.tracecompass.tmf.ui"/>
+      <import plugin="org.eclipse.tracecompass.tmf.core" version="0.1.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.tracecompass.totalads.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.tracecompass.totalads.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

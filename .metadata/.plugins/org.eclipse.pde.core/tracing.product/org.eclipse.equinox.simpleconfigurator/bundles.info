@@ -27,6 +27,7 @@ org.apache.felix.gogo.shell,0.10.0.v201212101605,file:/home/shary/workspace/tota
 org.apache.httpcomponents.httpclient,4.2.6.v201311072007,file:/home/shary/workspace/totalads/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.apache.httpcomponents.httpclient_4.2.6.v201311072007.jar,4,false
 org.apache.httpcomponents.httpcore,4.2.5.v201311072007,file:/home/shary/workspace/totalads/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.apache.httpcomponents.httpcore_4.2.5.v201311072007.jar,4,false
 org.apache.jasper.glassfish,2.2.2.v201205150955,file:/home/shary/workspace/totalads/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.apache.jasper.glassfish_2.2.2.v201205150955.jar,4,false
+org.apache.log4j,1.2.15.v201012070815,file:/home/shary/workspace/totalads/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.apache.log4j_1.2.15.v201012070815.jar,4,false
 org.apache.lucene.analysis,3.5.0.v20120725-1805,file:/home/shary/workspace/totalads/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.apache.lucene.analysis_3.5.0.v20120725-1805.jar,4,false
 org.apache.lucene.core,3.5.0.v20120725-1805,file:/home/shary/workspace/totalads/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.apache.lucene.core_3.5.0.v20120725-1805.jar,4,false
 org.eclipse.ant.core,3.3.0.v20140518-0042,file:/home/shary/workspace/totalads/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.ant.core_3.3.0.v20140518-0042.jar,4,false

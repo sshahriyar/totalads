@@ -36,11 +36,11 @@
             <goals>
               <goal>source-feature</goal>
             </goals>
-            <!-- <configuration>
-               <excludes>
-                <plugin id="org.eclipse.totalads.help"/>
-              </excludes>
-            </configuration>-->
+             <configuration>
+             <!--   <excludes>
+                <plugin id="org.eclipse.tracecompass.totalads.libraries"/>
+              </excludes>-->
+            </configuration>
           </execution>
         </executions>
       </plugin>

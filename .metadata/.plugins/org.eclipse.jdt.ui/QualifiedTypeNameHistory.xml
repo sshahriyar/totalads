@@ -6,6 +6,11 @@
 <fullyQualifiedTypeName name="org.apache.log4j.PropertyConfigurator"/>
 <fullyQualifiedTypeName name="org.eclipse.tracecompass.totalads.core.Activator"/>
 <fullyQualifiedTypeName name="org.eclipse.tracecompass.totalads.ui.io.ProgressConsole"/>
-<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
 <fullyQualifiedTypeName name="airbrake.AirbrakeAppender"/>
+<fullyQualifiedTypeName name="org.apache.log4j.ConsoleAppender"/>
+<fullyQualifiedTypeName name="org.apache.log4j.PatternLayout"/>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+<fullyQualifiedTypeName name="org.eclipse.tracecompass.totalads.exceptions.TotalADSUncaughtExceptionHandler"/>
+<fullyQualifiedTypeName name="org.apache.log4j.FileAppender"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 </qualifiedTypeNameHistroy>
