@@ -27,7 +27,7 @@ the 'mvn' command:
 $ mvn clean install -Pbuild-rcp -Dmaven.test.skip=true
 
 This will build the RCP for all supported architectures. The resulting archives
-will be placed in the directory totalads/org.eclipse.tracecompass.rcp.product/target/products
+will be placed in the directory totalads/org.eclipse.tracecompass.totalads.rcp.product/target/products
 
 Run the executable file from the above directory based on your OS, and to use TotalADS don't forget to install MongoDB. (MongoDB installation instructions are explained below in Step 7 and user's guide link is present below in Step 9).
 
@@ -38,16 +38,16 @@ SETTING UP DEVELOPMENT ENVIRONMENT IN ECLIPSE TO DEVELOP TOTALADS
 
 git clone https://github.com/sshahriyar/totalads
 cd org.eclipse.tracecompass
-If you want to contribute to TotalADS, first fork the org.eclipse.tracecompass repository it into your account and clone it from there (just as shown above) instead of this repository.
+If you want to contribute to TotalADS, first fork the totalads repository it into your account and clone it from there (just as shown above) instead of this repository.
 
 2. Checkout the development, "develop", branch:
 
  git checkout develop
 There are two more branches master and staging. If you just want to compile and run, then use the master branch but to add new features you must only use the develop branch.
 
-3. Install Eclipse package named "Eclipse for RCP and RAP Developers" from Eclipse's website. This package already contains the necessary plugins for Eclipse required by TotalADS to compile. You can also download any other Eclipse distribution and install the necessary plugins as mentioned in step 4.
+3. Download the Eclipse package named "Eclipse for RCP and RAP Developers"  from the Eclipse's website. This package already contains the necessary plugins for Eclipse required by TotalADS to compile. You can also download any other Eclipse distribution and install the necessary plugins as mentioned in step 4.
 
-4. (Following instructions from 4.1 to 4.4 are taken from http://wiki.eclipse.org/Trace_Compass/Development_Environment_Setup.)
+4. (Following instructions (4.1 to 4.4) are modified from http://wiki.eclipse.org/Trace_Compass/Development_Environment_Setup.)
 
 4.1 Import the TotalADS projects into the workspace.
 
@@ -73,7 +73,7 @@ Eclipse offers the ability to set target platforms, which will download a specif
 
 Expand the "org.eclipse.tracecompass.totalads.target" project.
 
-Double-click the .target file that corresponds to your Eclipse version (totalads-e4.4.target, at the time of this writing).
+Double-click the .target file totalads-e4.4.target.
 
 In the view that just opened, click Set as Target Platform on the top right.
 
@@ -84,7 +84,7 @@ Eclipse will now download the required dependencies, which may take some time th
 
 If you imported the *.help plugins (which contain the user and developer guides), you might notice warnings in these plugins because of missing files. It is because the documentation plugins need to be built using a separate component. If you do not care for the documentation, you can ignore those warnings, or even remove those plugins from your workspace.
 
-On the other hand, if you want to build or work on the documentation (which you should do if you add user-visible features!), here is how to build it.
+On the other hand, if you want to build or work on the documentation, here is how to build it.
 
 Click on one of the *.help projects
 
@@ -92,7 +92,7 @@ In the top menu, click "Project -> Build Project"
 
 After it is built, the warning should disappear, and the HTML files should be present in its doc/ sub-directory.
 
-Note that this builder does not run automatically ; Ant is not very smart at figuring out which files were changed, so it would end up constantly rebuilding the doc plugins for nothing. For this reason, if you modify the source (.mediawiki) files, you will have to rebuild the HTML manually, using the same method.
+Note that this builder does not run automatically; Ant is not very smart at figuring out which files were changed, so it would end up constantly rebuilding the doc plugins for nothing. For this reason, if you modify the source (.mediawiki) files, you will have to rebuild the HTML manually, using the same method.
 
 5. If you have not already installed it, install JDK 7 or higher for your operating system.
 
@@ -102,7 +102,7 @@ Note that this builder does not run automatically ; Ant is not very smart at fig
 
 6.2. If you don't know where JDK 7+, then search in your "programs files" in Windows or look at the following path for Linux "/usr/lib/jvm/"
 
-6.3. Now right click on org.eclipse.tracecompass.totalads and select project properties
+6.3. Now right click on org.eclipse.tracecompass.totalads.core and select project properties
 
 Select Java Build Bath
 
@@ -116,7 +116,7 @@ Click Edit and see if JRE is jdk 7+ or openjdk 7+; otherwise, click on Alternate
 
 7. Install MongoDB
 
-Follow the instructions here on how to install MongoDB based on your OS: http://docs.mongodb.org/manual/installation/ Simple installation instructions for a Linux system are as follows, they are also present on the above link:
+Follow the instructions here on how to install MongoDB based on your OS: http://docs.mongodb.org/manual/installation/. Simple installation instructions for a Linux system are as follows:
 
    curl -O http://downloads.mongodb.org/linux/mongodb-linux-x86_64-2.4.9.tgz
 
@@ -130,15 +130,15 @@ Follow the instructions here on how to install MongoDB based on your OS: http://
 
    And append the following ":your_path"/mongodb/bin" to PATH.
 
-   Replace your path with the actual path in the system and restart terminal
-Start MongoDB. If you installed it directly on your OS from the URL in step 7, then it may have already been started or will start on a reboot automatically. An alternate way to start mongodb is as follows: cd mongodb mongod --dbpath data/db/
+   Replace your path with the actual path to mongodb folder in your system and restart terminal
+Start MongoDB. If you installed it directly on your OS from the URL in step 7, then it may have already been started or will start on a reboot automatically (make sure that journaling is enabled, otherwise you may encounter error with TotalADS). An alternate way to start mongodb is as follows: cd mongodb mongod --dbpath data/db/
 
-8. Now right click on org.eclipse.tracecompass.totalads.core and run as Eclipse application. Once the new Eclipse instance is launched, you can open different perspectives from click on Windows->Perspective menu. The next time you can just select "Eclipse Application" from the Run (or Debug) icon in the toolbar.
+8. Now right click on org.eclipse.tracecompass.totalads.core and run as Eclipse application. Once the new Eclipse instance is launched, you can open different perspectives from Windows->Perspective menu. The next time you can just select "Eclipse Application" from the Run (or Debug) icon in the toolbar.
 
 9. You are all done setting up TotalADS. User guide and a developer's guide for TotalADS are available at the following URLs:
 
-https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/User-Guide
-https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/Developer-Guide
+https://github.com/sshahriyar/totalads/wiki/User-Guide
+https://github.com/sshahriyar/totalads/wiki/Developer-Guide
 
 
 

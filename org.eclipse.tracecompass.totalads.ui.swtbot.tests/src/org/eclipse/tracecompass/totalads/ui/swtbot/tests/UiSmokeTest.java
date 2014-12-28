@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 import org.eclipse.swtbot.eclipse.finder.widgets.SWTBotView;
 import org.eclipse.swtbot.swt.finder.SWTBot;
 import org.eclipse.swtbot.swt.finder.junit.SWTBotJunit4ClassRunner;
-import org.eclipse.swtbot.swt.finder.keyboard.Keystrokes;
+//import org.eclipse.swtbot.swt.finder.keyboard.Keystrokes;
 import org.eclipse.swtbot.swt.finder.utils.SWTBotPreferences;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotTable;
 import org.junit.Test;
@@ -78,8 +78,8 @@ public class UiSmokeTest extends AbstractUiTest {
         bot.comboBox().setSelection("Simple Text File");
 
         bot.text().setText("/tmp");
-        bot.button("Browse...").click();
-        bot.button("Browse...").pressShortcut(Keystrokes.ESC);
+        //bot.button("Browse...").click();
+        //bot.button("Browse...").pressShortcut(Keystrokes.ESC);
 
         bot.radio("Select the Kernel Trace in Project Explorer").click();
         bot.radio("Select the Folder Containing Test Traces").click();
@@ -109,8 +109,8 @@ public class UiSmokeTest extends AbstractUiTest {
         bot.textWithLabel("Select the Folder Containing Validation Traces").setText("/tmp");
         bot.button("Start Modeling").click();
         clickMessageBoxWithOK();
-        bot.button("Browse...").click();
-        bot.button("Browse...").pressShortcut(Keystrokes.ESC);
+       // bot.button("Browse...").click();
+       // bot.button("Browse...").pressShortcut(Keystrokes.ESC);
         bot = null;
         botView = null;
         assertTrue(true);
@@ -136,8 +136,8 @@ public class UiSmokeTest extends AbstractUiTest {
         bot.radio("Training and Testing").click();
         bot.radio("Testing").click();
         bot.text(3).setText("/tmp");
-        bot.button("Browse...").click();
-        bot.button("Browse...").pressShortcut(Keystrokes.ESC);
+       // bot.button("Browse...").click();
+       // bot.button("Browse...").pressShortcut(Keystrokes.ESC);
         bot.button("Start").click();
         clickMessageBoxWithOK();
         bot = null;

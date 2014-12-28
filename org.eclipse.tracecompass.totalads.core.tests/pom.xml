@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-   Copyright (C) 2014 Ericsson
+<!-- Copyright (C) 2014 Ericsson All rights reserved. This program and the
+	accompanying materials are made available under the terms of the Eclipse
+	Public License v1.0 which accompanies this distribution, and is available
+	at http://www.eclipse.org/legal/epl-v10.html -->
 
-   All rights reserved. This program and the accompanying materials
-   are made available under the terms of the Eclipse Public License v1.0
-   which accompanies this distribution, and is available at
-   http://www.eclipse.org/legal/epl-v10.html
--->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <parent>
-    <artifactId>org.eclipse.tracecompass</artifactId>
-    <groupId>org.eclipse.tracecompass</groupId>
-    <version>0.1.0-SNAPSHOT</version>
-  </parent>
+	<parent>
+		<artifactId>org.eclipse.tracecompass</artifactId>
+		<groupId>org.eclipse.tracecompass</groupId>
+		<version>0.1.0-SNAPSHOT</version>
+	</parent>
 
 	<groupId>org.eclipse.tracecompass</groupId>
 	<artifactId>org.eclipse.tracecompass.totalads.core.tests</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<name>TotalADS Core Test Plugin</name>
 	<description>TotalADS Core Test Plugin</description>
-    <packaging>eclipse-test-plugin</packaging>
+	<packaging>eclipse-test-plugin</packaging>
 
-  <!-- Do not download the test traces if "maven.test.skip" is set -->
+	<!-- Do not download the test traces if "maven.test.skip" is set -->
 	<profiles>
 		<profile>
 			<id>download-traces</id>
@@ -61,45 +56,47 @@
 		</profile>
 	</profiles>
 
-  <build>
-    <plugins>
+	<build>
+		<plugins>
 
-      <!-- We don't use the ant file to clean because of http://jira.codehaus.org/browse/MANTRUN-78 -->
-      <plugin>
-        <artifactId>maven-clean-plugin</artifactId>
-        <version>2.5</version>
-        <executions>
-          <execution>
-            <id>clean-traces</id>
-            <phase>clean</phase>
-            <configuration>
-              <filesets>
-                <fileset><directory>sampletraces/trace</directory></fileset>
-               </filesets>
-            </configuration>
-            <goals>
-              <goal>clean</goal>
-            </goals>
-          </execution>
-        </executions>
-       </plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-surefire-plugin</artifactId>
+				<version>${tycho-version}</version>
 
-      <plugin>
-        <groupId>org.eclipse.tycho</groupId>
-        <artifactId>tycho-surefire-plugin</artifactId>
-        <version>${tycho-version}</version>
+				<configuration>
+					<testSuite>org.eclipse.tracecompass.totalads.core.tests</testSuite>
+					<testClass>org.eclipse.tracecompass.totalads.core.tests.AllTotalADSTests</testClass>
+					<useUIHarness>false</useUIHarness>
+					<useUIThread>false</useUIThread>
+					<product>org.eclipse.platform.ide</product>
+				</configuration>
 
-        <configuration>
-                <testSuite>org.eclipse.tracecompass.totalads.core.tests</testSuite>
-                <testClass>org.eclipse.tracecompass.totalads.core.tests.AllTotalADSTests</testClass>
-                <useUIHarness>false</useUIHarness>
-                <useUIThread>false</useUIThread>
-                <product>org.eclipse.platform.ide</product>
-            </configuration>
+			</plugin>
+			<!-- We don't use the ant file to clean because of http://jira.codehaus.org/browse/MANTRUN-78 -->
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>2.5</version>
+				<executions>
+					<execution>
+						<id>clean-traces</id>
+						<phase>clean</phase>
+						<configuration>
+							<filesets>
+								<fileset>
+									<directory>sampletraces/trace</directory>
+								</fileset>
+							</filesets>
+						</configuration>
+						<goals>
+							<goal>clean</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 
-      </plugin>
 
-    </plugins>
-  </build>
+		</plugins>
+	</build>
 
 </project>
