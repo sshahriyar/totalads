@@ -19,7 +19,7 @@ import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.Logger;
 import org.apache.log4j.SimpleLayout;
 import org.eclipse.tracecompass.totalads.ui.TotalAdsPerspectiveFactory;
-import org.eclipse.tracecompass.tmf.ui.swtbot.tests.conditions.ConditionHelpers;
+import org.eclipse.tracecompass.totalads.ui.swtbot.tests.conditions.ConditionHelpers;
 import org.eclipse.swtbot.eclipse.finder.SWTWorkbenchBot;
 import org.eclipse.swtbot.eclipse.finder.widgets.SWTBotView;
 import org.eclipse.swtbot.swt.finder.finders.UIThreadRunnable;
