@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="totalads-4.4" sequenceNumber="56">
+<?pde version="3.8"?><target name="totalads-4.4" sequenceNumber="58">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.license.feature.group" version="0.0.0"/>
@@ -17,7 +17,7 @@
 <unit id="org.eclipse.tracecompass.tmf.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.tracecompass.lttng2.kernel.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.tracecompass.testing.feature.group" version="0.0.0"/>
-<repository location="http://download.eclipse.org/tracecompass/master/nightly"/>
+<repository location="http://download.eclipse.org/tracecompass/master/repository"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.cdt.gnu.dsf.feature.group" version="0.0.0"/>
@@ -63,7 +63,7 @@
 <unit id="org.eclipse.tracecompass.btf.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.tracecompass.tmf.pcap.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.tracecompass.lttng2.kernel.feature.group" version="0.0.0"/>
-<repository location="http://download.eclipse.org/tracecompass/master/nightly"/>
+<repository location="http://download.eclipse.org/tracecompass/master/repository"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.remote.feature.group" version="1.1.0.201409111520"/>
