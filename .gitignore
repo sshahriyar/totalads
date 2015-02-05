@@ -3,3 +3,5 @@ bin/
 target/
 */.settings/org.sonar.ide.eclipse.core.prefs
 .metadata/
+trace.zip
+totalADS-log4j.log
