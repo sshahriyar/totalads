@@ -6,10 +6,10 @@ Bundle-Version: 0.1.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Require-Bundle: org.junit,
  org.swtchart,
- org.eclipse.tracecompass.ctf.core,
  org.eclipse.tracecompass.totalads.core;bundle-version="0.1.0",
- org.eclipse.osgi,
- org.eclipse.tracecompass.totalads.libraries;bundle-version="0.1.0"
+ org.eclipse.tracecompass.totalads.libraries;bundle-version="0.1.0",
+ org.eclipse.tracecompass.ctf.core;bundle-version="[0.1.0,0.2.0)",
+ org.eclipse.osgi
 Bundle-Vendor: %Bundle-Vendor
 Bundle-Activator: org.eclipse.tracecompass.totalads.core.tests.TotalADSTestPlugin
 Bundle-ActivationPolicy: lazy

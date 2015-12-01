@@ -8,13 +8,13 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.ui.console,
  org.eclipse.tracecompass.totalads.core,
- org.eclipse.tracecompass.lttng2.control.ui,
- org.eclipse.tracecompass.tmf.ui,
- org.eclipse.tracecompass.tmf.core;bundle-version="0.1.0",
+ org.eclipse.tracecompass.totalads.libraries;bundle-version="0.1.0",
+ org.eclipse.tracecompass.lttng2.control.ui;bundle-version="[0.1.0,0.2.0)",
+ org.eclipse.tracecompass.tmf.ui;bundle-version="[0.1.0,0.2.0)",
+ org.eclipse.tracecompass.tmf.core;bundle-version="[0.1.0,0.2.0)",
  org.swtchart,
  com.google.gson;bundle-version="2.2.4",
- org.apache.log4j,
- org.eclipse.tracecompass.totalads.libraries;bundle-version="0.1.0"
+ org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Export-Package: org.eclipse.tracecompass.totalads.ui,
@@ -24,7 +24,5 @@ Export-Package: org.eclipse.tracecompass.totalads.ui,
  org.eclipse.tracecompass.totalads.ui.models,
  org.eclipse.tracecompass.totalads.ui.properties,
  org.eclipse.tracecompass.totalads.ui.results
-Import-Package: com.google.common.base;version="15.0.0",
- org.eclipse.tracecompass.tmf.core.signal,
- org.eclipse.tracecompass.tmf.core.trace
+Import-Package: com.google.common.base;version="15.0.0"
 Bundle-Vendor: %Bundle-Vendor
