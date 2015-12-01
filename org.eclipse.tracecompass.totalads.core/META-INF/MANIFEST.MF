@@ -25,7 +25,13 @@ Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .,
  bin/
 Import-Package: com.ibm.icu.impl
-Export-Package: org.eclipse.tracecompass.internal.totalads.ssh;x-friends:="org.eclipse.tracecompass.totalads.core.tests,org.eclipse.tracecompass.totalads.ui",
+Export-Package: org.eclipse.tracecompass.internal.totalads.algorithms.hiddenmarkovmodel;x-internal:=true,
+ org.eclipse.tracecompass.internal.totalads.algorithms.ksm;x-internal:=true,
+ org.eclipse.tracecompass.internal.totalads.algorithms.sequencematching;x-internal:=true,
+ org.eclipse.tracecompass.internal.totalads.readers.ctfreaders;x-internal:=true,
+ org.eclipse.tracecompass.internal.totalads.readers.textreaders;x-internal:=true,
+ org.eclipse.tracecompass.internal.totalads.readers.tmfreaders;x-internal:=true,
+ org.eclipse.tracecompass.internal.totalads.ssh;x-friends:="org.eclipse.tracecompass.totalads.core.tests,org.eclipse.tracecompass.totalads.ui",
  org.eclipse.tracecompass.totalads.algorithms,
  org.eclipse.tracecompass.totalads.core,
  org.eclipse.tracecompass.totalads.dbms,

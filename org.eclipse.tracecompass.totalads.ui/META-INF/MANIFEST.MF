@@ -19,10 +19,16 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Export-Package: org.eclipse.tracecompass.totalads.ui,
  org.eclipse.tracecompass.totalads.ui.diagnosis,
+ org.eclipse.tracecompass.totalads.ui.io,
  org.eclipse.tracecompass.totalads.ui.live,
  org.eclipse.tracecompass.totalads.ui.modeling,
  org.eclipse.tracecompass.totalads.ui.models,
+ org.eclipse.tracecompass.totalads.ui.models.create,
+ org.eclipse.tracecompass.totalads.ui.models.dbconnect,
+ org.eclipse.tracecompass.totalads.ui.models.delete,
+ org.eclipse.tracecompass.totalads.ui.models.settings,
  org.eclipse.tracecompass.totalads.ui.properties,
- org.eclipse.tracecompass.totalads.ui.results
+ org.eclipse.tracecompass.totalads.ui.results,
+ org.eclipse.tracecompass.totalads.ui.utilities
 Import-Package: com.google.common.base;version="15.0.0"
 Bundle-Vendor: %Bundle-Vendor
