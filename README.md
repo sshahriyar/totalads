@@ -23,7 +23,7 @@ Instructions to Compile TotalADS Using Maven
 
 	This will build the RCP for all supported architectures. The resulting archives will be placed in the directory totalads/org.eclipse.tracecompass.totalads.rcp.product/target/products
 
-	Run the executable file from the above directory based on your OS, and to use TotalADS don't forget to install Mongo
+	Run the executable file from the above directory based on your OS, and to use TotalADS don't forget to install MongoDB (see below).
 
 Instructions to setup TotalADS and Tracecompass Using Eclipse
 
