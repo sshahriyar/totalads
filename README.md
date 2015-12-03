@@ -2,8 +2,30 @@
 TotalADS is a framework to automatically diagnose anomalies from software systems in operations.
 It	integrates different anomaly detection algorithms. It supports execution traces and logs in CTF, XML and text format. It supports live anomaly detection using trace streaming along with real time training and testing. It also supports variety of trace inspection views for forensic analysis, such as control flow of processes,resource usages and etc. It is developed in Java and provides extendible interfaces in Java to add new algorithms, trace formats, and views. Most importantly, it is available as an Eclipse Plugin.
 
+Instructions to Compile TotalADS Using Maven
+	Download the source code by cloning it into your hard disk:
 
-Instructions to setup TotalADS and Tracecompass
+	$ git clone https://github.com/sshahriyar/totalads
+
+	Change your directory to totalads and install maven if you do not already have it.
+
+	To build the plugins manually using Maven, simply run the following command from the totalads directory:
+
+	$ mvn clean install
+
+	The default command will compile and run the unit tests. Running the tests can take some time, to skip them you can append "-Dmaven.test.skip=true" to the 'mvn' command:
+
+	$ mvn clean install -Dmaven.test.skip=true
+
+	The RCP is not built by default, to build it you need to add "-Pbuild-rcp" to the 'mvn' command:
+
+	$ mvn clean install -Pbuild-rcp -Dmaven.test.skip=true
+
+	This will build the RCP for all supported architectures. The resulting archives will be placed in the directory totalads/org.eclipse.tracecompass.totalads.rcp.product/target/products
+
+	Run the executable file from the above directory based on your OS, and to use TotalADS don't forget to install Mongo
+
+Instructions to setup TotalADS and Tracecompass Using Eclipse
 
 1. First clone the source code:
 
