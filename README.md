@@ -151,10 +151,15 @@ Instructions to setup TotalADS and Tracecompass Using Eclipse
 9. Now right click on org.eclipse.tracecompass.totalads.core and run as Eclipse application. Once the new Eclipse instance is launched click on Windows->Perspective menu to open a new perspective TotalADS. The next time you can just select "Eclipse Application" from the Run (or Debug) icon in the toolbar.
 
 
-10. You are all done setting up Tracecompass and TotalADS. User guide and a developer's guide for TotalADS are available at the following URLs:
+10. You are all done setting up Tracecompass and TotalADS.Following are some important links:
 
-     https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/User-Guide
-     https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/Developer-Guide
+     User Guide: https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/User-Guide
+
+     Developer Guide: https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/Developer-Guide
+  
+     Binary Executables: https://github.com/sshahriyar/totalads/releases
+
+     
 
 
 
