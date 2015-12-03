@@ -3,6 +3,7 @@ TotalADS is a framework to automatically diagnose anomalies from software system
 It	integrates different anomaly detection algorithms. It supports execution traces and logs in CTF, XML and text format. It supports live anomaly detection using trace streaming along with real time training and testing. It also supports variety of trace inspection views for forensic analysis, such as control flow of processes,resource usages and etc. It is developed in Java and provides extendible interfaces in Java to add new algorithms, trace formats, and views. Most importantly, it is available as an Eclipse Plugin.
 
 Instructions to Compile TotalADS Using Maven
+
 	Download the source code by cloning it into your hard disk:
 
 	$ git clone https://github.com/sshahriyar/totalads
