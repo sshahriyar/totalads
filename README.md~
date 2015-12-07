@@ -64,7 +64,7 @@ Instructions to setup TotalADS Using Eclipse
 
     4.2 Set the Target Platform.
 
-     Eclipse offers the ability to set target platforms, which will download a specific environment to run your plugins, without having to "pollute" your Eclipse install. TotalADS Compass ships target definition files, which is the recommended way of installing its dependencies.
+     Eclipse offers the ability to set target platforms, which will download a specific environment to run your plugins, without having to "pollute" your Eclipse install. Trace Compass ships target definition files, which is the recommended way of installing its dependencies.
 
     4.3 To set the target platform for the TotalADS plugins:
 
@@ -83,7 +83,7 @@ Instructions to setup TotalADS Using Eclipse
 
     On the other hand, if you want to build or work on the documentation (which you should do if you add user-visible features!), here is how to build it.
 
-    First you need to install the Mylyn-Wikitext Eclipse plugin, if you are not using the RCP and RAP Eclipse package:
+    First you need to install the Mylyn-Wikitext Eclipse plugin:
 
     Go to "Help -> Install New Software..."
     Select "-- All Available Sites--"
