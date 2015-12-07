@@ -152,9 +152,9 @@ Instructions to setup TotalADS Using Eclipse
 
 10. You are all done setting up TotalADS. Following are some important links:
 
-     User Guide: https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/User-Guide
+     User Guide: https://github.com/sshahriyar/totalads/wiki/1.-Overview
 
-     Developer Guide: https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/Developer-Guide
+     Developer Guide: https://github.com/sshahriyar/totalads/wiki/5.-Developer-Guide:-Adding-New-Algorithms-and-Trace-Types
   
      Binary Executables: https://github.com/sshahriyar/totalads/releases
 
