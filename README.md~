@@ -34,7 +34,7 @@ Instructions to setup TotalADS Using Eclipse
         
         cd totalads
 
-  If you want to contribute to TotalADS, first fork the org.eclipse.tracecompass repository it into your account and clone it from there  instead of this repository.
+  If you want to contribute to TotalADS, first fork the "totalads" repository into your account and clone it from there,  instead of this repository. Later on, when your code is ready on Github, then send me pull requests over here.
 
 2. Checkout the development, "develop", branch:
 
@@ -64,7 +64,7 @@ Instructions to setup TotalADS Using Eclipse
 
     4.2 Set the Target Platform.
 
-     Eclipse offers the ability to set target platforms, which will download a specific environment to run your plugins, without having to "pollute" your Eclipse install. TotalADS Compass ships target definition files, which is the recommended way of installing its dependencies.
+     Eclipse offers the ability to set target platforms, which will download a specific environment to run your plugins, without having to "pollute" your Eclipse install. TotalADS also ships target definition files, which is the recommended way of installing its dependencies.
 
     4.3 To set the target platform for the TotalADS plugins:
 
@@ -105,15 +105,15 @@ Instructions to setup TotalADS Using Eclipse
 6. If JDK 7+ is not already in path of Eclipse, you may encounter errors. If not skip this step, else to add JDK 7+ to the path of Eclipse do the following:
 
     6.1. Go to Windows->Preference->Java->Installed JRES. Add JDK 7+ as an additional installed JRE.
-    6.2. If you don't know where JDK 7+, then search in your "programs files" in Windows or look at the following path for Linux	  "/usr/lib/jvm/"
+    6.2. If you don't know where JDK 7+, then search in your "programs files" in Windows or look at the following path for Linux: "/usr/lib/jvm/".
 
-    6.3. Now right click on org.eclipse.tracecompass.totalads.core and select project properties
+    6.3. Now right click on org.eclipse.tracecompass.totalads.core and select project properties.
 
-    Select Java Build Bath
+    Select Java Build Bath.
 
-    Select Libraries
+    Select Libraries.
 
-    Select JRE System Library; (the one with the error status)
+    Select JRE System Library (the one with the error status).
 
     If there is no error status just select the JRE System Library
 
@@ -139,7 +139,7 @@ Instructions to setup TotalADS Using Eclipse
 
 	       Type gedit ~/.bashrc
 
-	       And append the following ":your_path"/mongodb/bin" to PATH.
+	       Append the following ":your_path"/mongodb/bin" to PATH.
 
 	       Replace your path with the actual path in the system and restart terminal
 
@@ -150,7 +150,7 @@ Instructions to setup TotalADS Using Eclipse
 9. Now right click on org.eclipse.tracecompass.totalads.core and run as Eclipse application. Once the new Eclipse instance is launched click on Windows->Perspective menu to open a new perspective TotalADS. The next time you can just select "Eclipse Application" from the Run (or Debug) icon in the toolbar.
 
 
-10. You are all done setting up TotalADS.Following are some important links:
+10. You are all done setting up TotalADS. Following are some important links:
 
      User Guide: https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/User-Guide
 

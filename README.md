@@ -34,7 +34,7 @@ Instructions to setup TotalADS Using Eclipse
         
         cd totalads
 
-  If you want to contribute to TotalADS, first fork the "totalads" repository into your account and clone it from there,  instead of this repository. Later on, when your code is ready on Github, then send pull requests using Github.
+  If you want to contribute to TotalADS, first fork the "totalads" repository into your account and clone it from there,  instead of this repository. Later on, when your code is ready on Github, then send me pull requests over here. 
 
 2. Checkout the development, "develop", branch:
 
